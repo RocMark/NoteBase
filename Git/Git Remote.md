@@ -1,7 +1,7 @@
 # Git Remote 
->https://kingofamani.gitbooks.io/git-teach/content/chapter_5/github.html
 
 //* git remote add origin [url]
+//* git push -u origin master
 
 # Git Push 免帳密?
 > $ git config credential.helper store
