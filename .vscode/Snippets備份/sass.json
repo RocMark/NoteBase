@@ -1,0 +1,60 @@
+{
+	"Color": {
+		"prefix": "co",
+		"body": [
+			"color: $1",
+		],
+		"description": "描述可有可無"
+	},
+	"TestLine": {
+		"prefix": "tl",
+		"body": [
+			"border: 0.5px solid #f50057"
+		],
+	},
+	"BorderBox": {
+		"prefix": "boxsi",
+		"body": [
+			"box-sizing: border-box"
+		],
+	},
+	"Uppercase": {
+		"prefix": "upper",
+		"body": [
+			"text-transform: uppercase"
+		],
+	},
+	"Top0": {
+		"prefix": "top0",
+		"body": [
+			"top: 0",
+			"left: 0"
+		],
+	},
+	"Position Absolute": {
+		"prefix": "poab",
+		"body": [
+			"position: absolute",
+			"top: 0",
+			"left: 0"
+		],
+	},
+	"Position Fixed": {
+		"prefix": "pofi",
+		"body": [
+			"position: fixed",
+			"top: 0",
+			"left: 0"
+		],
+	},
+	"Center": {
+		"prefix": "center",
+		"body": [
+			"position: absolute",
+			"top: 50%",
+			"left: 50%",
+			"transform: translate(-50%, -50%)"
+		],
+	},
+	
+}

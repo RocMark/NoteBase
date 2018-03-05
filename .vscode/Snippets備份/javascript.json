@@ -1,0 +1,120 @@
+{
+	"For loop": {
+		"prefix": "for",
+		"body": [
+			"for (let i = 0; i < $1; i += 1) {",
+			"    $2",
+			"}"
+		],
+	},
+	"JSON stringify": {
+		"prefix": "JSONs",
+		"body": [
+			"JSON.stringify($1)",
+		],
+	},
+	"JSON parse": {
+		"prefix": "JSONp",
+		"body": [
+			"JSON.parse($1)",
+		],
+	},
+	"AddEventListener": {
+		"prefix": "addEv",
+		"body": [
+			"$1.addEventListener('$2', () => {",
+				"$3",
+			"})",
+		],
+	},
+	"test log": {
+		"prefix": "logt",
+		"body": [
+			"console.log('123')",
+		],
+	},
+	"Function": {
+		"prefix": "func",
+		"body": [
+			"function $1($2) {",
+			"    $3",
+			"}"
+		],
+	},
+	"docu quersele": {
+		"prefix": "doqs",
+		"body": [
+			"document.querySelector('.$1')",
+		],
+	},
+	"addevent click": {
+		"prefix": "click",
+		"body": [
+			"addEventListener('click', () => {",
+			"    ",
+			"})"
+		],
+	},
+	"Return": {
+		"prefix": "rt",
+		"body": [
+			"return $1",
+		],
+	},
+	"constructor": {
+		"prefix": "constructor",
+		"body": [
+			"constructor (){",
+			"    $1",
+			"}"
+		],
+	},
+	"hr": {
+		"prefix": "hr",
+		"body": [
+			"// ---------------------------------------",
+		],
+	},
+	"jQuery on": {
+		"prefix": "on",
+		"body": [
+			"$('$1').on('$2', function () {",
+			"    $3",
+			"})"
+		],
+	},
+	"$": {
+		"prefix": "$",
+		"body": [
+			"$('$1')",
+		],
+	},
+	"e.preventDefault()": {
+		"prefix": "e.pre",
+		"body": [
+			"e.preventDefault()",
+		],
+	},
+	"testJson": {
+		"prefix": "testJson",
+		"body": [
+			"let testJSON = [{",
+			"    name: 'box1',",
+			"    price: 100,",
+			"}, {",
+			"    name: 'box2',",
+			"    price: 200,",
+			"}, {",
+			"    name: 'box3',",
+			"    price: 300,",
+			"}]",
+			"$1"
+		],
+	},
+	"testArr": {
+		"prefix": "testArr",
+		"body": [
+			"let testArr = ['box1', 'box2', 'box3']",
+		],
+	},
+}

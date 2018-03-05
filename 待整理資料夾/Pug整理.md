@@ -1,0 +1,64 @@
+
+# Pug語法
+```
+-fnI = {"type": "text", "name": "fName"}
+input(type=fnI.type, name=fnI.name)
+```
+
+```
+-yo ="<i>YOYOYO</i>"
+p= yo 
+p!= yo [會輸出html結果] p!{yo} 一樣
+```
+
+```
+case color
+    when "red"
+        h1 yo
+    when "blue"
+        h1 meh
+    default
+        h1 fuck
+```
+
+```
+script.
+    console.log('YO')
+```
+
+```
+-var color=["red","blue"]
+ul
+    -for(i=0; i<color.length; i++){
+        li= color[i]
+    -}
+ul
+    each cname in color
+        li= cname
+```
+
+```
+while i <=20
+    li= i
+    - i++
+```
+
+```
+mixin color(color,time)
+    li #{color} what #{time}
+ul
+    +color("red","7")
+    +color("blue","8")
+```
+
+# Pug Snippets
+* var / block
+* case
+```
+case variable
+    when condition
+        code
+    default
+        code
+$0
+```

@@ -1,0 +1,25 @@
+{
+  "name": "newnotebase",
+  "version": "1.0.0",
+  "description": "NoteBase",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocMark/NoteBase2.0.git"
+  },
+  "author": "RocMark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RocMark/NoteBase2.0/issues"
+  },
+  "homepage": "https://github.com/RocMark/NoteBase2.0#readme"
+}
