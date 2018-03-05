@@ -1,7 +1,6 @@
 # 將檔案移出 Staging Area (VSCode可用點的)
 git rm --cached  
 
-
 # 清除untracked file
 ```js
 //? 在用git clean前，建議加上 -n 

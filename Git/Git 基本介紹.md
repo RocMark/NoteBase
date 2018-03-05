@@ -1,11 +1,8 @@
 # Git 介紹 VCS(版本控制)
 
 # Git功能
-1. 協同合作
-2. 版本控制
-3. 記錄改變
-4. Revert Back
-5. Local & remote repos (可不需網路)
+1. 協同合作 2. 版本控制 3. 記錄改變
+4. Revert Back 5. Local & remote repos (可不需網路)
 
 # Git Config
 git config --global user.name 'RocMark'
