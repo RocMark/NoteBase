@@ -1,31 +1,3 @@
-# jQuery Event
-* Event整理在最下方
-
-//! hover() 不可用在on (其非為真正的Event)
-hover() 由 .mouseenter() + .mouseleave() 所組成
-
-# 事件處理
-```js
-//* 多個Event
-$('#btn').on('click keyup keypress blur change', () => {
-    console.log('yo')
-})
-//* 單個事件
-$('#btn').click(() => {
-    alert('yo')
-})
-```
-
-
-* 取得物件資訊
-```js
-$('#btn').on('click', (e) => {
-    console.log(e)
-    console.log(e.currentTarget.className)
-    console.log(e.currentTarget.outerHTML)
-})
-```
-
 # Browser Events 
 <!-- 待查 -->
 .resize() .scroll()

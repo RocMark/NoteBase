@@ -32,6 +32,40 @@ $('#item1, #item2').on('click mouseenter', function () {})
 
 //? length 可以用來計算子元素數量 / 陣列 / String字數
 
+# 選擇器
+```js
+// li:last / even / odd / nth-child(3n)
+$('ul#list li:first').css('color', 'red')
+
+// Input Type submit / text
+$(':button').hide()
+// 屬性選擇器
+$('[href]').css('color','red')
+$('[href="http://yahoo.com"]').css('color','red')
+```
+# Event 整理
+//* input focus & blur
+```js
+// 取得input值並輸出
+$('input').keyup((e) => {
+    console.log(e.target.value)
+})
+
+// Select改變
+$('select#gender').change((e) => {
+    console.log(e.target.value)
+})
+
+// Submit Form //!注意 對象指定Form
+$('#form').submit((e) => {  
+    // 要防止他提交(會刷新頁面)，才能看到log
+    e.preventDefult()
+    const name = $('input').val()
+    
+    console.log(name)
+})
+```
+
 # Hover 處理
 ```js
 $('.testLink').hover(function (e) {
@@ -275,7 +309,14 @@ width() / height() / show() / hide()
         }
     }
 ```
-
+# 取得物件資訊
+```js
+$('#btn').on('click', (e) => {
+    console.log(e)
+    console.log(e.currentTarget.className)
+    console.log(e.currentTarget.outerHTML)
+})
+```
 # Array (原生JS)
 ```js
 let sampleArray = ['one','two','three']

@@ -1,8 +1,7 @@
 # CSS3
 
 //? 有用到在回來把整理補上!
-
-[教學系列](https://www.youtube.com/watch?v=mK1NGZwOuaA&list=PLLnpHn493BHFOoBjPGOcWL1PnY0H1w5N_&index=13)
+>https://www.youtube.com/watch?v=mK1NGZwOuaA&list=PLLnpHn493BHFOoBjPGOcWL1PnY0H1w5N_&index=13
 
 * border radius
 * text shadow
