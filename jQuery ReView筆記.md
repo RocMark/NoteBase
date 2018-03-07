@@ -325,3 +325,28 @@ Math.ceil(mathTest) //* 小數無條件進位
 Math.round(mathTest) //* 小數四捨五入
 Math.floor(mathTest) //* 小數無條件捨去
 Math.random() // ? 可隨機產生介於0~1數值
+
+# 事件總覽 (待整理)
+
+> Browser Events 
+.resize() .scroll()
+
+> Form Events
+.focus() .blur()
+.change() //* 用於 select
+.submit() //* 指定 form
+>待查 .select() .focusin() .focusout() 待查
+
+> Keyboard Events
+.keyup() //* 輸入文字 
+>待查 .keydown() .keypress() 
+
+> Mouse Events
+.toggle() //* 常用重要
+.click() .dbclick()
+.mouseenter() + .mouseleave() => hover()
+.mousemove() //* 滑鼠移動
+.mousedown() //* mousedown 點擊按住觸發  
+.mouseup()  //* mouseup 鬆開滑鼠觸發 
+
+>待查 .mouseover() .mouseout() .contextmenu() 

@@ -1,19 +1,21 @@
 # CSS 常見問題整理
-<!-- &copy -->
+> 文字/Position篇另開檔 &copy 
 
 # Bug & 待學
 //* transform
 //* w/h100% 會使Scroll失效
+
+# 重點篇
+//? 文字置中 (div也可用)
+> 母 display:flex + 子 margin:auto
+//? div 置中
+> 母 position: relative + 子 center
 
 # Sass篇
 //* Mixin Default Value
 //? URL要加引號 其他免
 > @mixin bgi($imgSrc,$position: center top)
 > +bgi('url',center top)
-
-# Position 篇
-//* 左右推移 (取代float)
-> margin-left: auto
 
 # Form篇
 //* input:focus bgc
@@ -43,11 +45,6 @@ textarea{
 ```
 //* resize
 > both(default) / none / 水平垂直
-
-# 文字篇
-//* 陰影顏色
-> text-shadow: 2px(右) 2px(下) 3px(blur) gray(陰影色)
-//* 首字操控 &:first-letter
 
 # 一般裝飾篇
 //* hr 厚度

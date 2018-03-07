@@ -1,7 +1,6 @@
 // smooth scrolling
 //! 待轉換
 
-
 $('.scroll,a[href|="#"],.logo_scroll').click(function (event) {
     event.preventDefault() // 取消跳躍動作
     $('html').animate({

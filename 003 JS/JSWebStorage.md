@@ -73,3 +73,29 @@ for (let i = 0; i < changedUsers.length; i += 1) {
 
     console.log(obj[1].name)
 ```
+
+```js
+// LocalStorage篇 --------------------------------------------
+// SessionStorage基本一樣，但關掉視窗即消失
+
+// 將目標陣列轉成字串後存入 鍵值(前) 值(後)
+localStorage.setItem("鍵值",JSON.stringify(目標陣列))
+let retrieved = localStorage.getItem("鍵值")
+let bom = JSON.parse(retrieved)
+
+// 檢查Browser是否支援 LocalStorage
+if(typeof(Storage) !=="undefined") 
+
+// 新建空陣列
+let todoItemList = []
+// 將值/物件推入陣列中
+todoItemList.push('Tom', 'Durrr', 'Dwan')
+// 將陣列轉成字串
+let JSONReadyUsers = JSON.stringify(todoItemList)
+localStorage.setItem('todoItemList', JSONReadyUsers)
+// 將字串轉回陣列 localStorage['Key的名稱'] 取得值(為一陣列)
+console.log(JSON.parse(localStorage['todoItemList']));
+// 推入新資料
+let addSomeOne = JSON.parse(localStorage['todoItemList'])
+addSomeOne.push('Doyle')
+console.log(addSomeOne);

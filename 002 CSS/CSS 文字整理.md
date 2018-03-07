@@ -5,21 +5,36 @@
 
 //! white space 待查
 
+# 文字裝飾
+//* 陰影顏色
+> text-shadow: 2px(右) 2px(下) 3px(blur) gray(陰影色)
+//* 首字操控 &:first-letter
+
 # 文字置中 
 //* 設LineHight=容器高
 > height: 90px line-height: 90px text-align: center
 
 # 文字換行
->依單字換行 word-wrap: break-word
->死都不換行 white-space: nowrap
 
->文字強迫換行 word-break: break-all
+//? white-space: nowrap 死都不換行 
+//* white-space: pre-line 預留一行+indent 前幾個字
+
+> white-space: pre-line 預留一行
+> white-space: pre 有換行符號才換不然死都不換
+
+>單個單字拆解成可換行 word-break: break-all
+//// normal / keep-all 原始一樣????
+////word-wrap: break-word ////無效果??
 
 # 文字間距
 //* 單文字間距 
 > letter-spacing: 0.8
 
 //* 多單字間距
-> word-spacing           //多個單字間距
-> text-align: justify    //每個單字間格同寬
-> text-align-last        //最後一行的單字間格
+> word-spacing: 1.2px //多個單字間距
+
+//* justify //多單字間格同寬
+> text-align: center / left
+
+> 最後一行文字 往哪邊靠
+> text-align-last: right / center / justify    
