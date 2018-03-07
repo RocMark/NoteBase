@@ -1,3 +1,37 @@
-//* CSS Review
+//* Position
+//https://www.youtube.com/watch?v=-vo0HzNHL3U
 
+//? 物件 以左上角為基準
+// default position: static
 
+//* 用於微調位置好用
+position: relative // 單此行 不會造成任何作用
+//! 可以達到重疊物件效果
+top: -50px // 相對於原本左上角位置 上移50px
+
+//* 用於 指定子元素在母的位置 (較大範圍位移)
+// 單此行 會造成元素浮動，下方元素填補此原本位置
+position: absolute
+//? 加入座標後，會依照母元素的左上為基準位移
+//* 記得與母元素加入 position relative
+top: 20px
+
+//* 固定螢幕位置 
+position: fixed // 單此行同absolute
+// 不需要加relative
+
+//* Float 會使 height被忽略 由下一個元素往上填補
+//! Float 可用於文繞圖功能
+p lorem300 // 可使文字繞到img下
+img        // float right
+
+//? ClearFloat
+// Why? 如果子元素皆float
+// 會造成該母元素 height 0(無內容)
+
+// 用於母體 一次性解決 float問題
+&:after
+    content: ""
+    clear: both 
+    display: block
+    clear: both

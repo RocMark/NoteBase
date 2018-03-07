@@ -1,9 +1,18 @@
+# CSS 動畫 待學
+> https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5
+
 # 常用屬性
 > list-style-type: square
 > box-sizing: border-box
 > color: rgba(# 000,0.5)
 > appearance: button / none
 
+//* 分割 p成多欄
+> -webkit-column-count 
+> -webkit-column-gap (區間)
+> -webkit-column-rule (隔線)
+
+//! 用到padding & width 最好加上 box-sizing
 
 # Layout相關
 //* 切記Position Fixed left: 0 right: 0 不可省

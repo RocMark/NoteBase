@@ -1,3 +1,4 @@
+```js
 switch (cate) {
     // 要有引號!
     case 'MustDone':
@@ -6,7 +7,6 @@ switch (cate) {
     default:
         break
 }
-
 // LocalStorage篇 --------------------------------------------
 // SessionStorage基本一樣，但關掉視窗即消失
 
@@ -41,3 +41,4 @@ date.getTime();  // 時間(1970.1.1至今的毫秒数)
 date.getHours();  // 小時(0-23)
 date.getMinutes();  // 分鐘(0-59)
 date.getSeconds();  // 秒數(0-59)
+```

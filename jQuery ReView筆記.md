@@ -1,45 +1,44 @@
 # jQuery Review
-
->jQuery 基礎 擅長於 AJAX / DOM操作 / 特效
+> jQuery 基礎 擅長於 AJAX / DOM操作 / 特效
 > angular (擅長於互動式表單)
 
 # 待學
 //* Broken Image Handle
 //* cmd  Code . (開啟VSCode編輯器)
 
-# 重要功能
-//? forEach(function(){}) 用來loop JSON Array 皆可
-//* 多個選擇器 要加逗號 
-//* 多個Event 用空格格開
-
 # 重要事項
 //! jQuery with Arrow Function this 會變成 window物件
-//? ESLint 關閉規則 "func-names": ["error", "never"],
-//? "prefer-arrow-callback": ["error", "never"],
+> ESLint 關閉規則 "func-names": ["error", "never"],
+> "prefer-arrow-callback": ["error", "never"],
 
 # 常用
 //* children()  //* 沒有child
-//* append() [加入其下方，下一階層]
-//? .after() [加入其後方，同階層]  
-//! 使用DOM 插入 注意插入順序
+//? forEach(function(){}) 用來loop JSON Array 皆可
 
+//* 屬性選擇器
+> $('[href="http://yahoo.com"]').css('color','red')
 
+//* 多個選擇器 要加逗號  //* 多個Event 用空格格開
+> $('#item1, #item2').on('click mouseenter', function () {})
+
+# DOM Note
+> 使用DOM 插入 注意插入順序
+> append() [加入其下方，下一階層]
+> .after() [加入其後方，同階層]  
+
+# Selector 選擇器
 ```js
-// ? 多個選擇器 要加逗號 Event 用空格格開
-$('#item1, #item2').on('click mouseenter', function () {})
+$('ul').children().css('color', '#000')  //* 所有子
+$('ul').children('h3').css('color', 'blue') //* 所有子 h3
+$('.ulHeader').parent().css('background', 'red')
 
-```
-
-//? length 可以用來計算子元素數量 / 陣列 / String字數
-
-# 選擇器
-```js
 // li:last / even / odd / nth-child(3n)
 $('ul#list li:first').css('color', 'red')
 
 // Input Type submit / text
 $(':button').hide()
-// 屬性選擇器
+
+//! 屬性選擇器
 $('[href]').css('color','red')
 $('[href="http://yahoo.com"]').css('color','red')
 ```
@@ -251,12 +250,6 @@ width() / height() / show() / hide()
     })
 ```
 
-# Selector 選擇器
-```js
-    $('ul').children().css('color', '#000')
-    $('ul').children('h3').css('color', 'blue')
-    $('.ulHeader').parent().css('background', 'red')
-```
 
 # each 方法
 ```js   
@@ -309,6 +302,8 @@ width() / height() / show() / hide()
         }
     }
 ```
+
+
 # 取得物件資訊
 ```js
 $('#btn').on('click', (e) => {
@@ -318,6 +313,7 @@ $('#btn').on('click', (e) => {
 })
 ```
 # Array (原生JS)
+> length 可以用來計算子元素數量 / 陣列 / String字數
 ```js
 let sampleArray = ['one','two','three']
 sampleArray.push('four')

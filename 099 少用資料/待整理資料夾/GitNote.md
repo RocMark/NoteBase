@@ -25,6 +25,5 @@ error: failed to push some refs to "xxxxxxx"
     * 將更新從remote下載下來
     * 較git pull安全
 
-
 # 分支合併後悔
     * git rest --hadr ORIG_HEAD

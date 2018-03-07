@@ -9,6 +9,15 @@ figure
     img(src="#", alt="")
     figcaption Nice Animal Pic
 ```
+# Input List 用法 (datalist & select)
+//* datalist 可自行輸入，Select否
+```pug
+input(list="itemCate")
+datalist#itemCate
+    option(value="MustDone")
+    option(value="Routine")
+    option(value="Others")
+```
 
 
 # Sematic 

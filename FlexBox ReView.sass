@@ -1,0 +1,58 @@
+//* FlexBox Review
+//http://www.oxxostudio.tw/articles/201501/css-flexbox.html
+
+//! 物件置中 最簡單的法 即可!
+.boxes
+    display: flex
+.box
+    margin: auto
+
+.boxes
+display: inline-flex //指母體inline
+
+//* wrap-reverse 可達從後往前填滿效果
+flex-flow: row wrap-reverse
+// flex-direction + flex-wrap
+
+// 原始無設定 align為自動stretch
+//* 同時使用無效 在下的會複寫上
+// flex-start/end / center / baseline (物件等高) /stretch(default)
+//? 用於內容僅單行
+justify-items: center
+align-items: flex-start 
+
+//* 用於內容有多行 
+// 額外 space-around / space-between 可用
+align-content: space-around
+justify-content: center
+
+//* 子元素用 覆寫套用 align-items
+align-self: center
+// flex-end / start 
+
+.box
+    &:nth-child(1)
+        flex: 1 
+    &:nth-child(2)
+        flex: 2
+
+//* flex-grow & flex-shrink
+
+
+//* 在子元素上用 flex 代表剩餘空間他得到的等份
+//? 若只有一個元素設 flex:1 其可得到所有剩餘空間
+
+//* flexbox gap (物件間的空格)
+// 1. 可在子設margin + &last-child ml:0
+// 2. 或用 flexbox
+.boxes
+    //?經此效果彈性更好
+    justify-content: space-between 
+.box
+    flex-basis: 30% //等同於width
+    // 剩餘空間 達 margin效果
+
+
+//? 由於SEO 將 MainContent 改在上方較佳
+//* 此時即可使用 order: -1 將side放在最左
+// order 範圍 -n ~ n 皆可  -n在左
