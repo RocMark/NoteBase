@@ -42,3 +42,13 @@ date.getHours();  // 小時(0-23)
 date.getMinutes();  // 分鐘(0-59)
 date.getSeconds();  // 秒數(0-59)
 ```
+
+
+# When to  use Vue.js
+* 串接多個API
+* 資料邏輯重 [合併陣列etc]  [股票]
+* 生命週期 重 [API 載入先後順序]
+* Template 模組化
+* 跟 UI 有相依性規則
+* JQuery 適合單純的操控DOM 跟 
+* 網站自行練習開發 TO DO LIST為例

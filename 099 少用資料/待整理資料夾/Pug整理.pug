@@ -6,7 +6,7 @@ input(type=fnI.type, name=fnI.name)
 p= yo 
 p!= yo [會輸出html結果] p!{yo} 一樣
 
-```
+
 case color
     when "red"
         h1 yo
@@ -14,14 +14,14 @@ case color
         h1 meh
     default
         h1 fuck
-```
 
-```
+
+
 script.
     console.log('YO')
-```
 
-```
+
+
 -var color=["red","blue"]
 ul
     -for(i=0; i<color.length; i++){
@@ -30,30 +30,29 @@ ul
 ul
     each cname in color
         li= cname
-```
 
-```
+
+
 while i <=20
     li= i
     - i++
-```
 
-```
+
+
 mixin color(color,time)
     li #{color} what #{time}
 ul
     +color("red","7")
     +color("blue","8")
-```
+
 
 # Pug Snippets
 * var / block
 * case
-```
+
 case variable
     when condition
         code
     default
         code
 $0
-```

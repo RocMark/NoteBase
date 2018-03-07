@@ -26,8 +26,6 @@ let expensiveOnsale = products
 console.log(expensiveOnsale)
 ```
 
-
-
 ## map
 //? Loop Array + 處理 輸出到新陣列
 ```js
