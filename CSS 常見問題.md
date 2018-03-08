@@ -11,6 +11,34 @@
 //? div 置中
 > 母 position: relative + 子 center
 
+# 全屏
+```css
+div.fullScreenBG{
+    //* +fullScreen
+    //* +bgi('../img/bg2.jpg', right bottom, 圖片外的填補色) */
+    background-size: contain;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+}
+```
+
+# BGI
+> 全屏背景圖 body fixed / background-size: cover
+//* background 屬性
+> background: #eee url("../img/demo.jpg") no-repeat right top
+> background-attachment: fixed
+
+//? 注意最後 background position 用法 ( % , px , 位置)
+> 先X軸 left/right/center 
+> 後Y軸 top/center/bottom (順序不可變)
+> 圖片較容器小 Y軸設定才有用
+> 通常與 bgsize contain一起用
+
+
+
 # Sass篇
 //* Mixin Default Value
 //? URL要加引號 其他免

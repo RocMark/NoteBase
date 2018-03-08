@@ -1,4 +1,4 @@
-# 品質的 TODO List
+# Code Quality CheckList
 
 # 團隊活動
 - [x] 代碼規範

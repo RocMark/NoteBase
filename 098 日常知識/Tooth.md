@@ -1,6 +1,14 @@
 # Tooth
 >https://www.youtube.com/channel/UCJRjYybuVHy-bMVReuerSrQ
 
+# 舌頭清潔
+> 健康顏色 粉紅色 覆蓋一層淡淡的白色
+
+//* 牙刷 輕刷舌頭中間部分
+
+//* 刮舌器
+> 舌面後1/3開始 由後往前 不過用力 2~3下即可
+
 # 刷牙 
 > 先刷後牙，要換手刷
 > 牙齒/牙齦/舌頭 都要刷

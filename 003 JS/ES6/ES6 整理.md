@@ -1,22 +1,47 @@
 # ES6整理
 
-//* Babel 
+//* Babel 待查
 
-# default function  //!好用
-# Arrow Function
+# ES6 Template
+//* 可以於模版字串中 使用 JS Code進行運算
+
+# default value function
+```js
+function defaultTets(a, b = 10) {
+    //* 記得無default value的放前面較佳
+    return a + b
+}
+```
+
+# Arrow Function (匿名函式)
+> Why use?  Small / Inline /Single-Purpose
+> 可省 Function字 / 單行 return 可不用大括號 / 單個變數傳入 可不用小括號
+//* .filter(event => event.type === 'att')
+
+# 完整版 範例
+> 可以再把可以重複利用的判斷式抽出
+```js
+const reduceTotal = (prev, x) => (prev || 0) + x
+const isAttack = (e => e.type === 'att')
+const totalDmgOnDorkman = dragonEvents
+    // * 可以將 filter合併
+    .filter(isAttack)
+    .filter(e => e.target === 'player-dorkman')
+    // .fiter(e => e.type === 'att' && e.type === 'player-dorkman')
+    .map(e => e.value)
+    .reduce(reduceTotal)
+```
+
 # Class
 ```js
 function Person(name = 'person', age = 18) {
     this.name = name
     this.age = age 
 }
-
-
 const PersonArrow = (name, age) => {
     this.name = name
     this.age = age
 }
-
 class PersonClass {
     constructor(name, age) {
         this.name = name
@@ -80,6 +105,3 @@ function bears(...types) {
 }
 bears('polar', 'foo', 'fav')
 ```
-
-
-

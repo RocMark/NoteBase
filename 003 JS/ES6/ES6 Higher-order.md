@@ -4,15 +4,23 @@
 Less bugs //* Easier to reason about
 Less time //? Re-use more
 
-# List TransFormation 轉換 JSON用
+
+# forEach() V.S. map()
+forEach() 不會返回任何東西
+map 會返回一個相同大小的新數組
+
+# forEach()
 ```js
-// 將Array 轉成另一個Array
-.filter() / .map() 
-//? .find() 功能與filter相同，但只回傳第一個，取得結果為一個物件
+let books = [
+    { author: 'Tom', page: 23 },
+    { author: 'Mark', page: 46 },
+]
+books.forEach((book) => {
+    console.log(book.author)
+})
 ```
 
-## map()
-//? 抽出原Json，創造一個新的自訂陣列，可與filter合用
+## map() //? 取目標屬性 創造新陣列
 ```js
 let checkMan = attr => attr.gender === 'male'
 let names = person
@@ -24,48 +32,11 @@ let names = person
     // [ 'Mark is 27', 'Tom is 28', 'Tim is 34', 'Mary is 87' ]
 ```
 
-## filter()
+> .find() 功能與filter相同，但只回傳第一個，取得結果為一個物件
+## filter() //? 搜尋符合條件的資料用
 ```js
-//!  filter() 常用
-//* 用於Array 用來搜尋符合條件的資料
 //? 可以重複利用 checkMan 判斷式在其他地方 (decouple 解耦)
 const checkMan = attr => attr.gender === 'male'
 let mans = person
     .filter(checkMan)
 console.log(mans)
-    
-
-//* 原始會利用 for loop 來一個一個檢測
-/*
-let mans = []
-for (let i = 0; i < person.length; i += 1) {
-    if (person[i].gender === 'male') {
-        mans.push(person[i])
-    }
-}
-*/
-```
-
-
-
-
-
-
-
-
-
-
-
-
-//* In Javascript functions are value
-//? 可用來傳入 Higher-order Function
-```js
-let triple = function (x) {
-    return x * 3
-}
-let waffle = triple
-waffle(30)
-```
-# Why 傳入 Higher-order Function
-將多個小程式組成一個大程式 (composition 組成)
-

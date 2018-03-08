@@ -18,4 +18,3 @@ document.body.appendChild(newDiv)
 
 //! elementsOld 會拿到 newDiv；elementsNew 則否。
 // elementsNew.length !== elementsOld.length
-
