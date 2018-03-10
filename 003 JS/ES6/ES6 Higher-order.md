@@ -3,7 +3,7 @@
 # Why?
 Less bugs //* Easier to reason about
 Less time //? Re-use more
-
+省去 ijk宣告
 
 # forEach() V.S. map()
 forEach() 不會返回任何東西

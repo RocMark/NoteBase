@@ -1,8 +1,7 @@
 # JS一秒區分clientX,offsetX,screenX,pageX之間關係
 > https://kknews.cc/zh-tw/news/r3pzzr.html
 
-javascript的event對象的clientX,offsetX,screenX,pageX 弄得頭暈，於是決定做個圖來區分一下
-
+> 待整理
 
 event.clientX、event.clientY
 
@@ -19,7 +18,3 @@ event.offsetX、event.offsetY
 event.screenX、event.screenY
 
 滑鼠相對於用戶顯示器螢幕左上角的X,Y坐標。標準事件和IE事件都定義了這2個屬性
-
-
-
-原文網址：https://kknews.cc/zh-tw/news/r3pzzr.html

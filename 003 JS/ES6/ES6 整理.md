@@ -1,4 +1,5 @@
 # ES6整理
+> 內容 TS / ArrowFunc / Class / 解構
 
 //* Babel 待查
 
@@ -14,9 +15,14 @@ function defaultTets(a, b = 10) {
 ```
 
 # Arrow Function (匿名函式)
-> Why use?  Small / Inline /Single-Purpose
+> https://www.youtube.com/watch?v=6sQDTgOqh-I
+
+> Why use?  Short / Inline / Single-Purpose
 > 可省 Function字 / 單行 return 可不用大括號 / 單個變數傳入 可不用小括號
 //* .filter(event => event.type === 'att')
+
+//! 使用this更方便
+> ES6前需要用 bind() / apply()
 
 # 完整版 範例
 > 可以再把可以重複利用的判斷式抽出

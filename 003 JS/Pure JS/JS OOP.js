@@ -1,12 +1,5 @@
 //* JS Object-oriented Programming
 
-// ? Function目的在於將可重複利用的部分抽出
-// function person(name, favColor) {
-//     console.log(`Hi ${name} likes ${favColor}`)
-// }
-// person(john.name, john.favColor)
-// person('Tom', 'red')
-
 //* Object可以儲存各種的資訊 (func,[])
 //* 包含 Data & behavior
 let john = {
@@ -32,4 +25,3 @@ let tom = new Person('tom', 'blue')
 tom.greet()
 let mart = new Person('mart', 'yello')
 mart.greet()
-

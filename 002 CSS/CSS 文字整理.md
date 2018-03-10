@@ -1,9 +1,19 @@
 # 文字相關
 > Microsoft JhengHei 中字可用微軟正黑體
 
-> text-transform: uppercase // 轉大寫字
-
 //! white space 待查
+# 轉換大小寫 text-transform
+//? 注意 a 需要先設為block 才可用
+//* text-transform 為 p 用的
+> a
+>    display: inline-block
+>    &:first-letter //* 選取文的首字大寫
+>        text-transform: uppercase
+//* capitalize 該段落每個字首皆大寫
+
+#　設定中英文 不同字
+> https://wcc723.github.io/sass/2014/02/21/font-code-range/
+
 
 # 文字裝飾
 //* 陰影顏色

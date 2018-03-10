@@ -11,6 +11,9 @@
 //? div 置中
 > 母 position: relative + 子 center
 
+//* 多個屬性選擇器
+> input[name=Sex][value=M]
+
 # 全屏
 ```css
 div.fullScreenBG{
@@ -36,8 +39,6 @@ div.fullScreenBG{
 > 後Y軸 top/center/bottom (順序不可變)
 > 圖片較容器小 Y軸設定才有用
 > 通常與 bgsize contain一起用
-
-
 
 # Sass篇
 //* Mixin Default Value
@@ -115,3 +116,6 @@ hr{
 //? 基偶數行不同色 較易閱讀
 > table tr:hover Style(深色)
 > border-collapse: collapse
+
+# SVG
+//* pointer-events 穿透的div

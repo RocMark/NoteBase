@@ -15,9 +15,10 @@ module.exports = {
         "func-names": 0,
         "func-names": ["error", "never"],
         "prefer-arrow-callback": ["error", "never"],
+        
 
         "object-curly-spacing": 1,
-        "spaced-comment":1,
+        "spaced-comment":0,
         "no-multiple-empty-lines": 0,
         "comma-spacing": 1,
         "space-before-blocks": 1,

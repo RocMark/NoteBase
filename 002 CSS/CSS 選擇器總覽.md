@@ -3,7 +3,7 @@
 > input[type="text"] // 符合敘述的
 
 //? 格式
-> p:first-line (母體用)
+> p:first-line (母體用) //* ul也可用
 > &:hover (Nesting用)
 
 //* 母體
