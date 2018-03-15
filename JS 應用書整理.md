@@ -5,14 +5,31 @@
 # 文字過濾篇
 //* 基本都需要正規表示法 
 //? replace() 方法
-
+> 相關Event onfocus / onblur / onkeyup
 - 去除空白
-- 限定中字only
+- 限定中字only (type="number")
+- 中英判斷
+- pattern
+- 過濾不雅字
+
+- 限定數字 (max-length)
+> substr( start, length )
+
+# Form UX
+- 即時checking remain字數 ()
+- 即時 Hint
+- 密碼強度
+
+
 
 
 - input reset 清空表單用
 
+# tabindex 
+
 # 禁止 copy & paste
+> article
+>   user-select: none //*即可底下全部禁止選取
 
 
 # Form hint
