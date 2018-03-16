@@ -15,19 +15,19 @@ log.txt
 
 # Git 基本指令
 
-* 初始化Local Repo 
+//* 初始化Local Repo 
 (把 untracked files file 加入Index)
-會創建.git folder
+> 會創建.git folder
 git init  
 
-* 把檔案加入 Index
+//* 把檔案加入 Index
 git add 
 
-* 查看狀態
+//* 查看狀態
 git status
 
-* 查看commit 
+//* 查看commit 
 git log 
 
-* 把檔案加入 Local Repo
+//* 把檔案加入 Local Repo
 git commit 會進入類似文檔的地方Click i 就可以開始輸入

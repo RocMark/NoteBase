@@ -1,9 +1,7 @@
 # ES6 Destructuring 解構
-
 > https://ithelp.ithome.com.tw/articles/10193699
+
 //* Why Use? LessCode
-
-
 ```js
 makeSound({
     species: 'dog',

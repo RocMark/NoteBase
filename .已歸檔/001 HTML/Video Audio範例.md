@@ -3,7 +3,6 @@
 //! 注意瀏覽器不見得支援各種格式的影片
 //* 影片 webm 格式最通用
 //* 音檔 ogg Vorbis (壓縮過比mp3小)
-[將影片轉成WebM/Ogg/MP4/Sizing](http://www.mirovideoconverter.com/)
 
 ```pug
 //! autoplay 要考慮 mobile流量問題!!
@@ -23,8 +22,6 @@ video(controls)
     source(src="video/vd.mp4")
     source(src="video/vd.webm")
 ```
-
-
 # Audio Sample
 ```pug
 audio(src="audio/ad.mp3" controls)
