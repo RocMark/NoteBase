@@ -4,7 +4,8 @@ module.exports = {
         "browser": true,
         "node": true,
         "es6": true,
-        "jquery": true
+        "jquery": true,
+        "react": true
     },
     "rules":{
         "no-unused-vars": 1,
