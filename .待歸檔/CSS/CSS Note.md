@@ -1,7 +1,6 @@
 # CSS 動畫 待學
 > https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5
 
-
 //! 用到padding & width 最好加上 box-sizing
 //* 切記Position Fixed left: 0 right: 0 不可省
 

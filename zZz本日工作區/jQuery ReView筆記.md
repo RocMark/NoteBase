@@ -2,10 +2,6 @@
 > jQuery 基礎 擅長於 AJAX / DOM操作 / 特效
 > angular (擅長於互動式表單)
 
-# 待學
-//* Broken Image Handle
-//* cmd  Code . (開啟VSCode編輯器)
-
 # 重要事項
 //! jQuery with Arrow Function this 會變成 window物件
 > ESLint 關閉規則 "func-names": ["error", "never"],
@@ -350,3 +346,42 @@ Math.random() // ? 可隨機產生介於0~1數值
 .mouseup()  //* mouseup 鬆開滑鼠觸發 
 
 >待查 .mouseover() .mouseout() .contextmenu() 
+
+
+
+# fadeIn 淡入效果 淡出同理
+```js
+    $elem.fadeIn()
+    //* JS fadeIn() 先設至fadeIn CSS
+    //? CSS display:none opacity:0 transition 0.8s*
+
+    let elem = document.querySelector('.someClass')
+    elem.style.display = 'block'
+    requestAnimationFrame(() => elem.style.opacity = 1)
+```
+
+
+# animation 動畫效果
+```js
+    $elem.animate({
+        width:"70%",
+        opacity: 0.4,
+    }, 1500) //? 動畫時間
+
+    //* 原生 JS Web Animation API
+    elem.animate([
+        {
+            //* 初始狀態
+            transform: 'translateY(-100px) scaleX(2.5)',
+            transformOrigin: '50% 0',
+            filter: 'blur(40px)'
+            opacity: 0
+        },{
+            //* 完結狀態
+            transform: 'translateY(0) scaleX(1)',
+            transformOrigin: '50% 50%',
+            filter: 'blur(0)'
+            opacity: 1
+        }
+    ], 1500)
+```

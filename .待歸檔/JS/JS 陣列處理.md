@@ -3,6 +3,8 @@
 //* 6分快速理解 8種 Array處理
 > https://www.youtube.com/watch?v=Urwzk6ILvPQ
 
+> https://wcc723.github.io/javascript/2017/06/29/es6-native-array/
+
 //* 待看
 > https://www.youtube.com/watch?v=rRgD1yVwIvE&t=2s
 > https://www.youtube.com/watch?v=Wl98eZpkp-c&t=2s
