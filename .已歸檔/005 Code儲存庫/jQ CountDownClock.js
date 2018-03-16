@@ -1,6 +1,5 @@
 // count_down_clock_section
 
-//! 待轉換
 
 function countdown() {
     // Millisecond 兩位數 失敗

@@ -1,5 +1,12 @@
-// animate.css + wow.js
+// animate.css 
 // animated('object','bounce','duration','delay','repeat');
+
+
+//* animation 結束 用 animationEnd 去判斷
+//* 結束後移除 animated Class
+//* 才可於下次觸發時，執行動畫
+
+
 const animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
 function animated(object, type, duration = 1, delay = 0, repeat = 1) {
     $(object).addClass(`animated ${type}`).on(animationEnd, () => {

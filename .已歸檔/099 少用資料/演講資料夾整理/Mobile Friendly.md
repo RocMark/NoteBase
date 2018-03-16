@@ -48,6 +48,4 @@ site-footer-inner{
     padding-left: 15px;
     padding-right: 15px;
 }
-
-
 ```

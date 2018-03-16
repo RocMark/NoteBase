@@ -88,7 +88,7 @@ const rupture = require('rupture')
 //* JS
 > concat 合併多個檔案
 > uglifyes 
-> ////gulp-uglify 已棄用
+////gulp-uglify 已棄用
 > babel //! 未裝過
 
 # 插件語法篇

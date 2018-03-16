@@ -3,8 +3,8 @@
 //! 30:43 多層JSON = > 利用兩層For loop
 //* https://www.youtube.com/watch?v=rJesac0_Ftw&t=2s
 
+// ---------------------------------------
 // ? 註解區
-/*
 //* 建立Request
 let ourRequest = new XMLHttpRequest()
 //* 選擇方法&資料來源 GET 取得資料 POST 傳送資料
@@ -23,8 +23,9 @@ ourRequest.onload = function () {
 }
 //* 發送Request
 ourRequest.send()
-*/
 
+
+// ---------------------------------------
 // ! RealWorld Sample
 
 const test = document.querySelector('.test')

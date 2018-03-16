@@ -11,14 +11,14 @@ map 會返回一個相同大小的新數組
 
 # Example
 ```js
-let delTitle = attr => attr.title !== todoTitle
-let newTodoList = todoList
-    .filter(delTitle)
-    .map(attr => attr)
-newTodoList.forEach((obj) => {
-    htmlString+=`~`
-})
-$().render(htmlString)
+    let delTitle = attr => attr.title !== todoTitle
+    let newTodoList = todoList
+        .filter(delTitle)
+        .map(attr => attr)
+    newTodoList.forEach((obj) => {
+        htmlString+=`~`
+    })
+    $().render(htmlString)
 ```
 
 # forEach()

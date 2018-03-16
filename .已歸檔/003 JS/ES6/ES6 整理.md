@@ -1,7 +1,5 @@
 # ES6整理
-> 內容 TS / ArrowFunc / Class / 解構
-
-//* Babel 待查
+> 內容 TemplateString / ArrowFunc / Class / 解構
 
 # ES6 Template
 //* 可以於模版字串中 使用 JS Code進行運算
