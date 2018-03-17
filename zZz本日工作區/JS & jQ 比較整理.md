@@ -1,17 +1,28 @@
 # JS & jQuery 比較整理
 
-# onLoad Function
-> document.addEventListener('DOMContentLoaded', () => {}) 
-> $(() => {})  // jQ
+//! 開 jQuery Cheat Sheet Review
 
-# DOM Traversal
-> JS doqs(單一元素) doqsAll(所有符合元素)
+# 大綱
+- 搜尋 子 / 父 / 兄弟 //!待補
+- Set CSS Attr
+- Class 相關
+- 改變 DOM html & textContent
+- Create DOM
+
+# onLoad Function
 ```js
-    let li = document.querySelectorAll('li')
-    $('li')
+    // jsload (Snippets)
+    document.addEventListener('DOMContentLoaded', () => {}) 
+    $(() => {})  // jQ
 ```
 
+# DOM 選擇器 $('li')
+> JS doqs(單一元素) doqsAll(所有符合元素)
+
 # CSS Selector (jQ)
+JS Cant Use
+//! li:first / li:last
+
 ```js
     $('div *')     // div 下所有子
     $('div p')    // div 其下的 p 
@@ -23,9 +34,9 @@
 ```
 
 # Set CSS Attr (jQ)
+//* 單行屬性 Camel-Case
+//? 多屬性用物件
 ```js
-    // jQuery multiple attribute
-    //* 單行屬性 Camel-Case
     $('input[type="submit"]').css('borderColor','red')
     $('li').css({
         'font-size': '20px',
@@ -40,22 +51,17 @@
     p.style.color = 'red'
     // 多個元素 CSS
     let target = document.querySelectorAll('li')
-    changeAllCSS(target)
-    function changeAllCSS(elems) {
-
-        //* for 迴圈寫法
-        for (let i = 0; i < elems.length; i += 1) {
-            elems[i].style.color = 'blue'
-        }
-
-        //* forEach 寫法
-        elems.forEach((elem) => {
-            elem.style.color = 'red'
-        })
-    }
+    //* forEach 寫法
+    target.forEach((elem) => {
+        elem.style.color = 'red'
+    })
+    // for 迴圈寫法
+    // for (let i = 0; i < target.length; i += 1) {
+    //     target[i].style.color = 'blue'
+    // }
 ```
 
-# addClass
+# 增刪 / 判斷是否有 Class
 > jQ addClass('ClassName') / removeClass / hasClass
 > JS //! classList
 ```js
@@ -65,11 +71,21 @@
 ```
 
 # JS CSS Tips
-//! Dont use 會進行重繪
-> getAttribute()
-> setAttribute()
-> removeAttribute()
+//// Dont use 會進行重繪
+//// getAttribute() / setAttribute() / removeAttribute()
 > 表格需要重繪例外
 
 # Create DOM (JS)
+> https://www.youtube.com/watch?v=pRN6WFUEFFE
 
+# jQuery DOM包裹
+> .wrap() / .wrapAll() / .wrapInner()
+
+# jQuery DOM插入 其下
+> .append() / .prepend()
+//!查差異
+> .appendTo() / .prependTo() 
+
+# jQuery DOM插入 外部
+> .after() / before()
+> insertAfter() / insertBefore()
