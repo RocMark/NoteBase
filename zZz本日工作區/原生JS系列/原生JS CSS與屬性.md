@@ -1,7 +1,6 @@
 # 原生JS 整理
 > https://www.ptt.cc/bbs/Ajax/M.1491563311.A.1F2.html
 
-
 > JS 一次設定多個CSS屬性 //?待補
 //* ES6 Object assign用法 [MDN]
 > https://blog.fundebug.com/2017/09/11/object-assign/

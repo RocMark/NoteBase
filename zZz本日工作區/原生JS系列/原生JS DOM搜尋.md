@@ -8,10 +8,9 @@
     console.log(ul.children)
 ```
 
-# 父篇
-```js
-    
-```
+# 父篇 parentNode vs parentElement
+//* parentNode (w3c標準)
+//// parentElement 僅IE支援
 
 # 兄弟篇
 .nextElementSibling
@@ -32,3 +31,4 @@ doqs('a:nth-child(1)')   //! (x) 首元素為li 同上
 # Dont USE
 > 共通原因: 會將 indent 視為一個TextNode 
 //// .childNodes / .nextSiblings / previousSibling
+//// parentElement 僅IE支援
