@@ -4,7 +4,9 @@
 - LightBox Making
 - renderArticle 改成 forEach()
 
-//!  重新撰寫 JS 總整理
+//! 補進 原生JS 詢子
+> https://ithelp.ithome.com.tw/articles/10191765
+
 
 # What to ReView
 - ES6 Folder
@@ -31,11 +33,6 @@
 - Chart.js (資料視覺化)
 - Table
 > https://pjchender.blogspot.tw/2015/03/jquery_8.html
-
-
-# Daily Lunch Time
-- Web Dev 2018
-- Top10 JS interView Problem
 
 
 # InterView SetUp

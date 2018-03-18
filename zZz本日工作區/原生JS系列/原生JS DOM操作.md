@@ -2,24 +2,12 @@
 > https://www.ptt.cc/bbs/Ajax/M.1491563311.A.1F2.html
 
 # 大綱
-- DOM 查詢
 - DOM 建立
 - DOM 插入、取代
 - DOM 刪除
 - DOM 複製
 - DOM 修改
 //! DocumentFragment
-
-# 查詢 DOM
-> doqs (單一元素) doqsAll(所有符合元素)
-//* 串接查詢
-```js
-    //* 檢查是否符合指定的選擇器
-    elem.matches('.target') === true
-    let ul = document.querySelector('ul')
-    let p = ul.querySelector('p')
-    p.style.color = 'red'
-```
 
 # innerHTML & outerHTML
 > jQ html() text()

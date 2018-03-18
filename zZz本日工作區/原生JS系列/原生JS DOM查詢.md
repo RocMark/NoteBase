@@ -1,6 +1,17 @@
 # 原生JS 搜尋 child / parent / siblings
 > https://www.youtube.com/watch?v=rBjvPNE2or0
 
+# 查詢 DOM
+> doqs (單一元素) doqsAll(所有符合元素)
+//* 串接查詢
+```js
+    //* 檢查是否符合指定的選擇器
+    elem.matches('.target') === true
+    let ul = document.querySelector('ul')
+    let p = ul.querySelector('p')
+    p.style.color = 'red'
+```
+
 # 子篇
 //? .children 會回傳 NodeList 需要用Loop處理 同doqsAll
 ```js
