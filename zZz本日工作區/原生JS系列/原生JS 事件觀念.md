@@ -4,6 +4,14 @@
 //* IE 冒泡相關
 > http://blog.51cto.com/mamadu/1971411
 
+# Note
+//? 在移除elem前，是否該移除listeners?
+//* 原文重要review https://goo.gl/Li6Mk7
+> Yes!! 有些瀏覽器會自動移除，有些則無
+//? 有可能會造成 memory leak!
+//* 但可以用 事件代理解決 (delegation)
+
+
 # 大綱
 - Event Capturing 捕獲 / Bubbling 冒泡 //! 必看
 - useCapture 
@@ -22,8 +30,7 @@
 //! 用於 checkbox增加易用性 另開文
 > 原生JS Checkbox
 
-
-- 事件代理 (父帶子註冊事件)
+- 事件代理/指派/委託 (父帶子註冊事件)
 > Event delegation //! 重要
 //? 好處於 新增子/刪除子不需處理listener
 
@@ -134,14 +141,45 @@
     }, false);
 ```
 
+# e.target vs e.currentTarget
+//? e.target 引起觸發事件的元素
+//* e.currentTarget 事件綁定的元素(使用addEvent的傢伙)
+```js
+    let ul = document.querySelector('ul')
+    ul.addEventListener('click', function(e){
+        
+        //* 引起觸發事件的元素
+        console.log(e.target) // <li>Hey!</li>
+        
+        //* this 代表 e.currentTarget (事件綁定的元素)
+        console.log(e.currentTarget) // <ul> ~ </ul>
+        console.log(this) // <ul> ~ </ul>
+
+        console.log(e.target.tagName) // LI
+        console.log(e.target.textContent) // Hey!
+        // console.log(this.textContent.length) // 4
+
+        console.log(this.tagName) // UL
+
+    },false)
+```
+
 # 事件物件 Event Object
 > 當 addEven註冊 Event Handler(function)時
 > 會去建立一個 Event Object (含與事件相關的屬性)
 ```js
     //? 即為 function傳入的 變數e  log(e)
     // 較常用屬性:
-    // type / target(觸發元件)
-    // pageX / pageY (滑鼠座標)
+
+    // e.target 可以取得被點擊的物件
+    // e.target.id 取得該id
+    // e.target.classList 取得該物件class陣列
+    // e.type (事件類型)
+    // e.pageX / e.pageY (滑鼠座標)
+    // e.clientX  滑鼠位置(根據window)
+    // e.offset  滑鼠位置(根據該元件)
+    //* 用來判斷是否長按該key並點擊
+    // e.altKey ctrlKey shiftKey
     btn.addEventListener('click', function(e){
         console.log(e)
     }, false)
@@ -170,6 +208,12 @@
         console.log(e.target.textContent)
     })
 ```
+
+# Why Not 在新創元件後在加 addEventListener即可?
+> 每次新增後在重新addEvent 沒完沒了外，
+> 若是不斷地的去重複監聽事件，又忘了移除監聽
+//! => 會造成 memory leak的問題
+
 
 # 阻擋事件冒泡傳遞
 //? stopPropagation()

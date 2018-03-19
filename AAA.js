@@ -1,3 +1,7 @@
 //*
 
-const sortedCompanies = con
+document.addEventListener('DOMContentLoaded', () => { 
+    
+})
+
+
