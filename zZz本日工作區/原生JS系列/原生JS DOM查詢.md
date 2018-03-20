@@ -1,6 +1,12 @@
 # 原生JS 搜尋 child / parent / siblings
 > https://www.youtube.com/watch?v=rBjvPNE2or0
 
+# Note
+//* ul.children
+//* li.parentNode
+//! .nextElementSibling
+
+
 # 查詢 DOM
 > doqs (單一元素) doqsAll(所有符合元素)
 //* 串接查詢

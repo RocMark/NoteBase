@@ -47,8 +47,9 @@ div.fullScreenBG{
 > +bgi('url',center top)
 
 # Form篇
-//* input:focus bgc
-//* label style
+//* input:focus
+    &:focus
+        border: 5px solid #80deea
 //! 禁止用戶選取 user-select: none
 
 # UL篇

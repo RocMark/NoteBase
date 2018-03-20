@@ -12,17 +12,19 @@
 ```js
     let ul = document.querySelector('ul')
     ul.addEventListener('click', (e) => {
-        //* tagName 會自動轉成全大寫，將其轉回
-        let trigger = e.target
+        //* tagName 會自動轉成全大寫，將其轉回e.target
 
-        //* 根據 tag新增不同屬性
-        if (trigger.tagName.toLowerCase() === 'li') {
+        //* 根據 Tag 名 尋找
+        // if (e.target.tagName.toLowerCase() === 'li') {
+
+        //* 根據 Class名尋找
+        if (e.target.classList.value.match('asideNavLink')) {
             console.log(e.target.textContent)
-            trigger.addEventListener('click', (event) => {
+            e.target.addEventListener('click', (event) => {
                 // do stuff
             })
         } else {
-            trigger.addEventListener('click', (event) => {
+            e.target.addEventListener('click', (event) => {
                 // do stuff
             })
         }

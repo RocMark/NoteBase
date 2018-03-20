@@ -6,9 +6,9 @@
 > https://blog.fundebug.com/2017/09/11/object-assign/
 
 # 大綱
-- 修改 DOM 屬性
-- 修改 CSS Class
-- 修改 CSS 屬性
+- 修改 DOM 屬性     elem.id = 
+- 修改 CSS Class   .classList.add('')
+- 修改 CSS 屬性     .style.paddingTop = 
 
 # 原生JS 注意事項
 //? doqsAll 操作要用Loop

@@ -16,6 +16,12 @@
         Label <input type="checkbox">
     </label>
 ```
+```pug
+    label label文
+        input(type="number" value="1" max="" min="1")
+    //- &:focus
+            border: 4px solid #80deea
+```
 
 # 事件註冊
 //! 點擊Label時會被觸發兩次

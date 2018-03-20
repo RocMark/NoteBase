@@ -1,7 +1,7 @@
 # 原生JS 事件種類整理篇
 
 //! submitBtn e.preventDefault 要套用到 form上!!!!
-
+//! JS 無 hover 可用 mosueover
 
 //* 更進階 待補
 > https://ithelp.ithome.com.tw/articles/10192175
