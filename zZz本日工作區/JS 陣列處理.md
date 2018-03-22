@@ -2,13 +2,11 @@
 
 //* 6分快速理解 8種 Array處理
 > https://www.youtube.com/watch?v=Urwzk6ILvPQ
-
 > https://wcc723.github.io/javascript/2017/06/29/es6-native-array/
 
-//* 待看
-> https://www.youtube.com/watch?v=rRgD1yVwIvE&t=2s
-> https://www.youtube.com/watch?v=Wl98eZpkp-c&t=2s
-> https://www.jianshu.com/p/f821b8aa4f69
+//* reduce 複習
+>https://www.youtube.com/watch?v=Wl98eZpkp-c&t=2s
+
 
 # 文字處理
 ```js
@@ -41,21 +39,6 @@ console.log(expensiveOnsale)
 ## map
 //? Loop Array + 處理 輸出到新陣列
 ```js
-const products = [{
-    name: 'box1',
-    price: 400,
-    remaining: 1,
-}, {
-    name: 'box2',
-    price: 600,
-    remaining: 0,
-}, {
-    name: 'box3',
-    price: 800,
-    remaining: 1,
-},
-]
-
 //* Loop 出各 Object 的 name
 let name = products.map(item => item.name)
 console.log(name)  //[ 'box1', 'box2', 'box3' ]
