@@ -6,6 +6,23 @@
 //* li.parentNode
 //! .nextElementSibling
 
+# 
+```js
+//! 較快 
+//* 前為 selection 後為 traversal
+$('#dest').find('li') 
+$('li').first().parent()
+$('li').first().next()
+
+//* 原始
+$('#dest li')
+$('li:first')
+```
+
+# 找最近的元素
+elem.closest('li') 
+//! 待補 似乎沒想像的好用
+
 
 # 查詢 DOM
 > doqs (單一元素) doqsAll(所有符合元素)

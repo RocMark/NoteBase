@@ -2,6 +2,15 @@
 > https://www.youtube.com/watch?v=NxoexgNOvgQ
 > https://gitbook.tw/
 
+# 大綱
+- Git原理
+- Git 分支觀念
+- Git rebase意義
+- Git reset HEAD^
+- 搶救篇 (取消動作、還原)
+- 問題解決篇
+- 修改歷史記錄篇
+
 # 重要Note
 //! 分支 is 貼紙!
 //* git reset 只是改變到指定狀態，並非刪除檔案
@@ -13,6 +22,12 @@
 //? 分支則會指向 一串樹狀圖
 
 > commit id 為 SHA-1 hash的前幾位數
+
+//* 合併過的分支要留著嗎?
+> 基本無作用，因為檔案已經被加入其他分支去了
+> 也可以作為記錄留著
+
+////------------------------------------------
 
 # Git 原理
 > 23分處 重要Git原理 review!!
@@ -28,6 +43,7 @@ git 做 add / commit 產生的物件，會存於 .git資料夾內
 - Commit (Commit 本體)
 - Tag
 
+////------------------------------------------
 # 分支 32分
 開分支並非複製資料，//! 而是類似貼紙/指標 (會移動的)
 //* 因此分支刪除時，仍可將資料救回
@@ -39,11 +55,13 @@ git 做 add / commit 產生的物件，會存於 .git資料夾內
 # HEAD 
 HEAD 會指向所在的Commit(分支)
 也是一個指標
-
+//* git reset HEAD 並不會發生任何動作
 
 # 標籤 Tag
 標籤也是類似貼紙，//? 但是不會移動的
 只能移除
+
+////------------------------------------------
 
 # Merge 
 //* 合併者往前移動
@@ -56,6 +74,8 @@ B 合併 A 做出專用的合併節點，並且 B往前移動
 A rebase B，將 A 複製貼上到 B 的屁股
 A 會變為 HEAD，B 則保持原位
 
+////--------------------------------------------
+
 # git reset 
 //! git reset 表示 我要把現在狀態 變成 HEAD^ 的狀態
 //* ^ 代表倒退一步 ^^兩步.....etc 或 ~2
@@ -64,6 +84,9 @@ git reset HEAD^ --hard
 --hard 表 把所有檔案都拋棄
 --soft 表 檔案丟回 暫存區
 --mixed  (預設) 表 檔案丟回工作目錄
+////--------------------------------------------
+
+# 搶救篇
 
 # 救回 git reset HEAD^ --hard
 git reflog //* 可以查詢被reset的節點
@@ -87,10 +110,6 @@ git reset ORIG_HEAD --hard
 
 //* 亦可使用 reflog 去查詢 Commit ID
 
-# detached HEAD 斷頭狀態
-當 HEAD 指向 沒有分支的地方時，會跳出的訊息(並非錯誤)
-只是告知你在的位置而已
-
 # 刪除的分支 如何救回? 1:19
 git branch -d cat //* 會提示你 分支未合併
 git branch -D cat //* 刪除
@@ -100,11 +119,16 @@ git branch -D cat //* 刪除
 //* 找出刪除分支的Commit ID 即可救回
 
 git branch 分支名 Commit ID
+////--------------------------------------------
+# 問題解決篇
+
+# detached HEAD 斷頭狀態
+當 HEAD 指向 沒有分支的地方時，會跳出的訊息(並非錯誤)
+只是告知你在的位置而已
 
 # 只選擇特定節點做 Commit Merge
 取得該點ID 
 git cherry-pick Commit ID
-
 
 # 不小心把帳密放在 Git 中想把其刪除
 //* rm -f 
@@ -113,6 +137,9 @@ git filter-branch --tree-filter "rm -f config/帳密檔"
 filter-branch 可以針對該分支的每個Commit 節點做同一件事
 
 //* 即使用此種方法刪除，仍可用 reset將其救回
+
+////--------------------------------------------
+# 修改歷史記錄篇
 
 # 修改歷史紀錄  合併節點篇 1:28 //! 重要
 //* 可以做到 合併多個節點 (太多瑣碎節點可用)
@@ -135,7 +162,14 @@ squash 可做到合併多個節點
     s deeeeee add dog 2
 ```
 
-# 修改歷史紀錄  拆解節點篇
+# 修改歷史紀錄  拆解節點篇 1:31
+git rebase -i commit id
+在要編輯的 改成 e
 
+執行 git reset HEAD^  //!不要使用--hard
+就會把東西丟回 工作區
+git status
+分開進行 git add / commit 即可拆成兩次
 
-https://Aaron Bond.gallery.vsassets.io/_apis/public/gallery/publisher/Aaron Bond/extension/Better Comments/1.2.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage
+結束後再用
+git rebase --continue //?繼續執行

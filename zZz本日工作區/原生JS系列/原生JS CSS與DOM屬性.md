@@ -8,7 +8,7 @@
 # 大綱
 - 修改 DOM 屬性     elem.id = 
 - 修改 CSS Class   .classList.add('')
-- 修改 CSS 屬性     .style.paddingTop = 
+- 修改 CSS 屬性    .style.paddingTop = 
 
 # 原生JS 注意事項
 //? doqsAll 操作要用Loop

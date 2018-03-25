@@ -2,13 +2,6 @@
 
 //? CSS 必須使用camel foo.style.borderBottom
 
-```js
-//? 只能取得第一個元素
-doqs('li:last-child')
-//? 取得所有元素
-doqsAll('.navItem:nth-child(even)')
-```
-
 # parentNode / parentElement 同效果
 //* 可以當一般選擇器用
 > itemList.parentNode.style.bgc='red'

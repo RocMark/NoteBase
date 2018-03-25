@@ -5,6 +5,10 @@
 
 > find() 與filter類似，但只會回傳一次值
 
+//! match 只能用於 String
+//* indexOf 可用於 字串或陣列
+> .find() 功能與filter相同，但只回傳第一個，取得結果為一個物件
+
 # Mutator Method //! 會對Array做更動
 push() //於陣列最後加入元素
 unshift() //於陣列最前加入元素

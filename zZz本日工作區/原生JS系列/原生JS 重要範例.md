@@ -8,7 +8,7 @@
 - 密碼 / 重新輸入密碼 / 禁止Copy Paste Cut //! 待修正
 - AJAX + 註冊事件 //* 待補
 
-# 事件代理寫法
+# 事件代理寫法 delegation
 ```js
     let ul = document.querySelector('ul')
     ul.addEventListener('click', (e) => {

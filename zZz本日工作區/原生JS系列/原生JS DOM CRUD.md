@@ -42,26 +42,56 @@
 //? createTextNode 
 > 適用於新創元素，並且需要放置在另一處
 
+# DOM Manipulation Convenience Methods
+> https://goo.gl/7U1fW3
+
+//* 免參照父
+//? 注意支援度!!!
+```js
+    elem.remove()
+
+    //* 插入父元素底下
+    ul.prepend(newElem) //* 成為首個子
+
+    //* 將 新建元素 插入 已存在元素 之前
+    existElem.before(newElem)
+
+    existElem.replaceWith(newElem) 
+
+    //* 尋找最接近的元素
+    elem.closest('div')
+```
 
 
 # 插入 / 取代 DOM
 //? insertBefore(newElem,existElem)
 ```js
-    //* 會將物件插在 已建立物件的後面
-    ul.appendChild(p) 
-    //* 物件插在ul下 的 已存在Elem前
-    ul.insertBefore(newElem,existElem) 
+    //* 插入父元素底下
+    ul.prepend(newElem) //* 成為首個子
+    ul.appendChild(newElem)  //* 成為末個子
+
+    //* ul 之下 將 新建元素 插入 已存在元素 之前
+    ul.insertBefore(新建元素,已存在元素) 
     //! ul.insertAfter() (X) 不存在
-    //? 取代
-    ul.replaceChild(replaceElem,oldElem)
+
+    //* 將 新建元素 插入 已存在元素 之前
+    existElem.before(newElem)
+
+    //* 取代
+    ul.replaceChild(newElem,existElem) //* 參照父
+
+    existElem.replaceWith(newElem) //* 免參照
 ```
 
 # 刪除 DOM
 //! Review!
 ```js
+    //! 現已不需參照父元素
+    let elem = doqs('.target')
+    elem.remove() //?即可
+
     //* 不需要參照 父元素
     elem.parentNode.removeChild(elem)    
-
     //* 需要參照到 父元素
     parentElem.removeChild(elem)
 ```
