@@ -12,16 +12,14 @@
 //* git push [url]
 //* 輸入帳密後，下一次只要git push即可
 
+# Git 移除 origin //* 成功
+> git remote remove origin
+> git remote add origin ~.git
+> git push -u origin master
+
 # Git Force Push 
 > -f is --force shorthand
 //* git push -f origin master
-
-# Git 移除 origin //* 貌似成功了
-> git remote remove origin
-> git remote add origin https~
-> git push origin master
-
-
 
 //* 亦可設置成有ExpiredTime的 (2hour)
 > git config --global credential.helper 'cache --timeout 7200'
