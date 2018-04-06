@@ -10,3 +10,5 @@ $('.scroll,a[href|="#"],.logo_scroll').click(function (e) {
         scrollTop: $('html').offset().top - 76,
     }, 1000)
 })
+
+let str =  'Hey there'

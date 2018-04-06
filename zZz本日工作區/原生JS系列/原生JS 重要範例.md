@@ -20,13 +20,9 @@
         //* 根據 Class名尋找
         if (e.target.classList.value.match('asideNavLink')) {
             console.log(e.target.textContent)
-            e.target.addEventListener('click', (event) => {
-                // do stuff
-            })
+            // do stuff
         } else {
-            e.target.addEventListener('click', (event) => {
-                // do stuff
-            })
+            // do stuff
         }
     })
 

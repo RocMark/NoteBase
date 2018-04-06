@@ -108,9 +108,3 @@
 # 修改 DOM 內容
 //* .innerHTML 傳統做法
 > elem.innerHTML = `<h1>Change</h1>`
-
-# 修改 DOM 內容進階
-//! DocumentFragment 可以加速渲染速度!!
-```js
-
-```
