@@ -16,9 +16,7 @@
 - Closure
 
 # Next to Learn
-- Array Handling slice / pop / push ..
 - CSS Pseudo  (Before / After用法)
-- this KeyWord
 - Memory Leak
 - ES6 Symbol
 

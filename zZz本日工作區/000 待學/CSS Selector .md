@@ -1,6 +1,5 @@
 # CSS Selector ReView
 
-
 # Pseudo Selector
 
 

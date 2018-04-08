@@ -33,7 +33,6 @@ select.formSelect
     option(value="1")1
 ```
 
-
 # DOM
 ```js
 foo.textContent = 'Hello'

@@ -2,7 +2,10 @@
 > LearnCode.academy / Modular Javascript
 > https://goo.gl/TQictb 系列#1
 
-//! 下方原則 Review!
+# 原則
+* Break Component Into Pieces
+* Do OneThing only
+* DRY code: Dont Repeat Yourself
 
 # IIFE
 ```js
@@ -11,11 +14,6 @@
     //* 在此內宣告的變數，不會為Global Function
 })()
 ```
-
-# 原則
-- Break Component Into Pieces
-- Do OneThing only
-//* DRY code: Dont Repeat Yourself
 
 # Use Const
 盡可能的使用 const 需要變動值再改成 let 
