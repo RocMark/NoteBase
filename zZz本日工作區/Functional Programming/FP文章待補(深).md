@@ -14,7 +14,7 @@ Ex: FP常用的 currying / recursion 效率沒 for 來的高，
 > http://mis101bird.js.org/function/
 
 # 解說 context stack & JS function 原理
-JS 呼叫Function實，會在內部創建一個記錄目前Function執行環境的物件(Execution Context frame)並放入Function context stack
+JS 呼叫Function時，會在內部創建一個記錄目前Function執行環境的物件(Execution Context frame)並放入Function context stack
 
 Function context stack 被JS設計用來儲存這些 Execution Context frame
 ，記錄整個程式執行的狀況。
