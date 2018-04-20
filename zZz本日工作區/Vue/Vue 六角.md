@@ -170,10 +170,21 @@ vue、ng、react 資料驅動功能
 //* 用於運算邏輯較重
 //? 把於HTML的運算邏輯搬到 JS computed 屬性
 
+//* 常用來判斷目前網頁狀態
+
 * 收納 template 邏輯 即時更動資料靠此
 
 //! 牽動到data 才會更動
 > 在computed中必須要使用到 this.x 監聽該資料更動，才會生效
+```js
+{{ fullName}}
+computed: {
+    fullName() {
+        //* 當 fName或 lName 改動就會自動重新 render
+        return this.fName + '' + this.lName
+    }
+}
+```
 
 # Method & Computed 差異 //* 重要
 //! Computed 無法帶參數，Method可

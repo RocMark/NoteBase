@@ -3,10 +3,6 @@
 //* git remote add origin [url]
 //* git push -u origin master
 
-# Git Multi Line Commit
-> git commit -m 'First line
-> Second line'
-
 # Git Push 免帳密?
 //? git config credential.helper store
 //* git push [url]
@@ -16,10 +12,6 @@
 > git remote remove origin
 > git remote add origin ~.git
 > git push -u origin master
-
-# Git Force Push 
-> -f is --force shorthand
-//* git push -f origin master
 
 //* 亦可設置成有ExpiredTime的 (2hour)
 > git config --global credential.helper 'cache --timeout 7200'
