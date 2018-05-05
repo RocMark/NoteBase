@@ -6,7 +6,7 @@ module.exports = {
         "es6": true,
         "jquery": true,
     },
-    "rules":{
+    "rules": {
         "no-unused-vars": 1,
         "prefer-const": 1,
         "no-use-before-define": 0,
@@ -15,10 +15,12 @@ module.exports = {
         "func-names": 0,
         "func-names": ["error", "never"],
         "prefer-arrow-callback": ["error", "never"],
-        
+
+
+        "no-param-reassign": 1,
 
         "object-curly-spacing": 1,
-        "spaced-comment":0,
+        "spaced-comment": 0,
         "no-multiple-empty-lines": 0,
         "comma-spacing": 1,
         "space-before-blocks": 1,
@@ -35,6 +37,7 @@ module.exports = {
         "space-infix-ops": 1,
         "max-len": 0,
         "no-trailing-spaces": 0,
-        "semi":  ["error", "never"]
+        "semi": ["error", "never"],
+        "comma-dangle": 0,
     }
 };

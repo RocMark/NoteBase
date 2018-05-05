@@ -2,7 +2,6 @@
 > http://oomusou.io/json-server/intro/
 > https://www.youtube.com/watch?v=uFKa4xrc42c
 
-
 使用靜態JSON 自建可操作API
 提供 RESTFul API Server
 可以接 HTTPS Request
@@ -24,7 +23,6 @@ json-server --watch db.json
 1. CORS全開 (跨來源資源共用)
 Cross-origin resource sharing
 2. 無權限管理
-
 
 # db.json 檔案位置
 於下指令的所在位置

@@ -26,6 +26,7 @@
         "multiline",
         "nginja",
         "proto",
+        "reject",
         "zinja"
     ],
     "favorites.resources": [
