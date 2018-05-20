@@ -1,7 +1,6 @@
 # JS CallBack
 > https://www.youtube.com/watch?v=xHneyv38Jro
 
-//! ES6以前，切分變數有效範圍的最小單位是 "function" (var)
 
 //? 同步 synchronous (一般執行順序)
 > 前一個執行完才執行下一個，依照順序

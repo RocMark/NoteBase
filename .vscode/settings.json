@@ -32,13 +32,9 @@
     "favorites.resources": [
         "AAA.js",
         "臨時用的.md",
-        "常用備忘錄.md",
-        ".已歸檔\\004 Git",
         "zZz本日工作區\\原生JS系列",
-        "zZz本日工作區",
-        "zZz本日工作區\\Vue",
-        "FreeCodeCamp Note",
         "FreeCodeCamp Note\\演算法篇\\Confirm the Ending.md",
-        "FreeCodeCamp Note\\卡關整理"
+        "zZz本日工作區\\深入淺出 ES6",
+        "zZz本日工作區\\Array 復習篇.md"
     ]
 }

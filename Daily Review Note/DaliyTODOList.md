@@ -1,13 +1,5 @@
 # Daily TODOList
 
-# DEMOSite TODOList
-- LightBox Making
-- renderArticle 改成 forEach()
-
-//! 補進 原生JS 詢子
-> https://ithelp.ithome.com.tw/articles/10191765
-
-
 # What to ReView
 - ES6 Folder
 - Pure JS Folder

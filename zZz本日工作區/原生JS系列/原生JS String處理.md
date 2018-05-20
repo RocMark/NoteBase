@@ -1,22 +1,25 @@
 # 原生JS String 處理
 > https://www.youtube.com/watch?v=O7KwWw3KLw4
 
+# 目錄
+//* 皆為 [0為始]
+* length
+* toUpperCase() / toLowerCase()
+* trim() 移除兩邊indent & 空白
+
+* indexOf()
+* slice(始,末) 
+切割出指定長度的字串
+
+* split('當切割點的字串', 回傳陣列的長度)
+會回傳一個陣列
+
 # 文章預覽範例
 ```js
     let p = document.querySelector('p')
     let linkTemplate = `<button>ReadMore</button>`
     p.textContent = p.textContent.trim().slice(0,50) + '...'
     p.innerHTML = p.textContent.trim().slice(0,50) + '....' + linkTemplate
-```
-
-# 基礎用法
-//? trim 移除兩邊indent & 空白
-```js
-    let testStr = 'Hello World'
-    log(testStr.length) // 取長度
-    log(testStr.toUpperCase()) // 轉成全部大寫
-    log(testStr.toLowerCase()) // 轉成全部小寫
-    log(testStr.trim()) //! 移除左邊兩邊 indent & 空白
 ```
 
 # 尋找字串中字串
@@ -40,6 +43,7 @@
     testStr.slice(0,2) //He
     testStr.slice(1,2) //He
 ```
+
 # 切割分解字串 slice篇 split篇
 //? .split('當切割點的字串', 回傳陣列的長度)
 > .split 結果 會回傳一個陣列

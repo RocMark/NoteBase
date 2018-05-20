@@ -2,8 +2,6 @@
 > email / url / tel / search
 > color(支援度要查)
 
-
-
 # Input Pattern
 > 待補完
 

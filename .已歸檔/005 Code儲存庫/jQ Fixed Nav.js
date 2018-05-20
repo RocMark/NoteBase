@@ -28,5 +28,4 @@ function fixedNav() {
     left: 0
     right: 0 
     z-index: 30
-    border: 0.5px solid #f50057
 */
