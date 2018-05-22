@@ -8,8 +8,6 @@
 > "prefer-arrow-callback": ["error", "never"],
 
 # 常用
-//* children()  //* 沒有child
-//? forEach(function(){}) 用來loop JSON Array 皆可
 
 //* 屬性選擇器
 > $('[href="http://yahoo.com"]').css('color','red')
@@ -42,14 +40,10 @@ $('[href="http://yahoo.com"]').css('color','red')
 //* input focus & blur
 ```js
 // 取得input值並輸出
-$('input').keyup((e) => {
-    console.log(e.target.value)
-})
+$('input').keyup((e) => { console.log(e.target.value) })
 
 // Select改變
-$('select#gender').change((e) => {
-    console.log(e.target.value)
-})
+$('select#gender').change((e) => { console.log(e.target.value) })
 
 // Submit Form //!注意 對象指定Form
 $('#form').submit((e) => {  

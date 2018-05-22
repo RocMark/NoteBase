@@ -1,10 +1,3 @@
-# Portfolio 建置筆記
-
-# FIXME
-- 最後一區要設offset
-- 補上提示字 & 紅邊 form
-
-
 # JS Get ScrollPos
 ```js
     let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName('html')[0].scrollTop

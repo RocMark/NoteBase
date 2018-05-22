@@ -1,10 +1,5 @@
 # JS 入門觀念提醒
-
 * script / css 位置解釋
-
-> function => method
-> property => Ex: innerHTML
-
 # Attribute vs Property
 > https://www.youtube.com/watch?v=Ut-ATm23_Pg
 
