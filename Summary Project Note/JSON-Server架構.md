@@ -1,0 +1,36 @@
+# JSON-Server架構
+
+npm install json-server -g
+json-server --watch data/data.json
+
+# RESTFUL 
+具象狀態傳輸，可以從url解讀出他的請求
+GET POST PUT PATCH DELETE 
+
+//!!!!!!  重要
+input required 輸入空白仍可以通過
+
+//* 先去除頭尾空白，在判斷是否為空資料
+if(input.val().trim()){//有值}
+
+if (!inputName) return false
+
+//* 去除字間空白
+.replace(/\W|_/g, '')
+
+# jQuery AJAX 方法
+
+```js
+    $.ajax({
+        url: 'http://localhost:3000/users',
+        method: 'get',  // 預設為get 可省略不寫
+        dataType: 'json', 
+        data: {},
+    }).done((res) => {
+        console.log(res)
+    }).fail((err) => {
+        console.log(err)
+    })
+```
+
+
