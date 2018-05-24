@@ -1,0 +1,11 @@
+@import './_keyframes.scss';
+
+.animated {
+  animation-fill-mode: both;
+  // animation-iteration-count: infinite;
+}
+
+.bounce {
+  animation: bounce 1s ease-in 1s infinite;
+  transform-origin: center bottom;
+}

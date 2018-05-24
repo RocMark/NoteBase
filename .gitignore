@@ -1,9 +1,7 @@
 # ignore node_modules
 /node_modules
 /public 
-/style.sass
-/AAA.js
-/style.css.map
 /bootstrap-4.1.1
 /jQ SourceCode.js
-/AAA.html
+/SourceCode/*
+/testArea/*

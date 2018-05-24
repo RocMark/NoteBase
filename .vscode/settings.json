@@ -30,11 +30,11 @@
         "zinja"
     ],
     "favorites.resources": [
-        "AAA.js",
+        "testArea\\cSp.js",
         "臨時用的.md",
-        "zZz本日工作區\\原生JS系列",
-        "FreeCodeCamp Note\\演算法篇\\Confirm the Ending.md",
-        "zZz本日工作區\\深入淺出 ES6",
-        "zZz本日工作區\\Array 復習篇.md"
-    ]
+        "testArea\\AAA.js",
+        "testArea\\AAA.scss",
+        "testArea\\AAA.html"
+    ],
+    "favorites.sortOrder": "MANUAL"
 }
