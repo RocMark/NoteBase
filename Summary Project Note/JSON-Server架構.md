@@ -17,20 +17,3 @@ if (!inputName) return false
 
 //* 去除字間空白
 .replace(/\W|_/g, '')
-
-# jQuery AJAX 方法
-
-```js
-    $.ajax({
-        url: 'http://localhost:3000/users',
-        method: 'get',  // 預設為get 可省略不寫
-        dataType: 'json', 
-        data: {},
-    }).done((res) => {
-        console.log(res)
-    }).fail((err) => {
-        console.log(err)
-    })
-```
-
-

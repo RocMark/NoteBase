@@ -20,8 +20,6 @@
             colore: blue //! X無效 第二個元素為h2
         h2:nth-child(2)
             colore: blue // ok  元素正確且順序正確
-
-    
 ```
 
 

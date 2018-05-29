@@ -1,40 +1,13 @@
 {
     "cSpell.words": [
-        "a",
-        "autocapitalize",
-        "autocorrect",
-        "class",
-        "doby",
-        "doid",
-        "doqs",
-        "factorialize",
-        "ginja",
-        "helloaddjojdopajopdajop",
-        "identityf",
-        "inja",
-        "keydown",
-        "keypress",
-        "keyup",
-        "liftf",
-        "metacharacters",
-        "mousedown",
-        "mouseenter",
-        "mouseleave",
-        "mousemove",
-        "mouseout",
-        "mouseup",
-        "multiline",
-        "nginja",
-        "proto",
-        "reject",
-        "zinja"
     ],
     "favorites.resources": [
         "testArea\\cSp.js",
         "臨時用的.md",
         "testArea\\AAA.js",
         "testArea\\AAA.scss",
-        "testArea\\AAA.html"
+        "testArea\\AAA.html",
+        "AAA.md"
     ],
     "favorites.sortOrder": "MANUAL"
 }

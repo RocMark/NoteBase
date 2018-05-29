@@ -1,4 +1,5 @@
 # SCSS 15分鐘入門
+> https://goo.gl/wKv7Ck
 
 # 變數
 $color-gray: #eee
@@ -8,3 +9,21 @@ $fz-primary: $color-gray
 $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 
 * 建議: 套用全網站的顏色、字體建議都先定義成變數
+
+# Import
+_reset.scss (加下底線防止編譯)
+可省略 .scss & 下底線
+@import 'reset';
+
+# Mixin
+```scss
+  @mixin brr($radius: 15px) {
+    border-radius: $radius;
+  }
+
+  .box {
+    @include brr(10px);
+  }
+```
+
+# Function (bu)
