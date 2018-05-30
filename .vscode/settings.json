@@ -3,11 +3,12 @@
     ],
     "favorites.resources": [
         "testArea\\cSp.js",
-        "臨時用的.md",
-        "testArea\\AAA.js",
-        "testArea\\AAA.scss",
+        "testArea\\main.js",
         "testArea\\AAA.html",
-        "AAA.md"
+        "AAA.md",
+        "testArea\\AAA.json",
+        "testArea\\style.scss",
+        "SourceCode\\jquery v3.3.1\\jquery.js"
     ],
     "favorites.sortOrder": "MANUAL"
 }

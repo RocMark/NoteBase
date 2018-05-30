@@ -2,6 +2,25 @@
 > https://ithelp.ithome.com.tw/articles/10193699
 
 //* Why Use? LessCode
+
+## 解構 物件
+```js
+    let person = {
+        fName: 'John',
+        lName: 'Doe',
+        age: 30
+    }
+    //? 甚至可以自訂縮寫
+    let { fName: fn, lName, age } = person
+    console.log(fn)
+```
+## 解構 陣列
+```js
+    let arr = [1, 2, 3, 4]
+    let [one, two, three] = arr
+    console.log(one)
+```
+
 ```js
 makeSound({
     species: 'dog',

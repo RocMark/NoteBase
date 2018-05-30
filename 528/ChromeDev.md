@@ -41,8 +41,15 @@ Low-end mobile / Offline
   5. Resume & 再次點擊 BTN
   6. 就可以導向 該 component 的位置了
 ```
+## Local Overrides JS [未成功]
+* 需要讓 JS 先於 page loads
+* manifest.json
+run_at to document_start.
+C:\Users\username\AppData\Local\Google\Chrome\
+* content script
+加入 <script>
 
-## Local Overrides  (chrome 65)
+## Local Overrides css  (chrome 65)
 儲存 用 devTools 改變 網頁的元素樣式
 * 無法改 element.style & DOM Tree
 ```
@@ -50,6 +57,8 @@ Low-end mobile / Offline
   2. 選擇儲存處
   3. 修改樣式 => reload
   4. 按下 F12 即可套用上次修改的樣式
+
+  Make your changes. After you add a folder you can switch to the network tab and right click on any file and select “Save for overrides”. I have already overridden scripts.js so it shows with a “blue dot”.
 ```
 
 ## Accessibility Tab (chrome 65)

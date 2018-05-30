@@ -9,6 +9,7 @@ module.exports = {
     "rules": {
         "no-use-before-define": 0,
         "linebreak-style": 0,
+        "func-names": 0,
         "semi": ["error", "never"],
         "strict": 0
     }

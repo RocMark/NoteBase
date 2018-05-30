@@ -63,13 +63,6 @@ JS中 6大型別: object,string,number,boolean,null,undefined
 
 > JS 可以用 mixin 的方式複製，達成類似 class 的方式，但實際上還是有部分是 share 相同的 reference，無法完全複製。
 
-# Prototypes
-
-原型鏈將 object 連結起來，當我們在取用 object特性，會按照 Prototype chain 去尋找所指的特性。
-
-一般最上層的 Prototype chain 是 //* Object.prototype。
-
-//? JS 所謂的 Class、inheritance 形式，便是由 Prototype chain 模仿而成。
 
 # Behavior Delegation
 > JS 物件的特性是 Delegation-Oriented Design。
