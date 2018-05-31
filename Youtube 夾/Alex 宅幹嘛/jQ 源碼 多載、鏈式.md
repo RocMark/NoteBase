@@ -1,5 +1,6 @@
 # 從 jQuery 入門到認識JS 
 jQuery IE6-8 用 1.12
+> https://goo.gl/KnGxXf
 
 ## chrome 中的 $ (review)
 console.dir($)
