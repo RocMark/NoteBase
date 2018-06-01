@@ -48,7 +48,7 @@ const 對於 Primitive 型別 (String,Number,Boolean,Symbol) 可以有不可更�
     //* 函式宣告（Function Declaration）
     function test(){ /*最原始*/}
 
-    //* 函式運算式（Function Expressions）
+    //* 函式表達（Function Expressions）
     //? 可以避免 Hoisting 使其衝至最上方，較穩定
     let testFunc = function(){ return 'test' }
     testFunc()

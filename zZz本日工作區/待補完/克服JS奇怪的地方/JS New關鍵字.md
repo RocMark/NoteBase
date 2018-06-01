@@ -25,7 +25,7 @@
     console.log(john)
 
     //! 忘了加 new
-    //* 就變成了 函數運算式（Function Expressions）
+    //* 就變成了 函數表達式（Function Expressions）
     let Tom = Person() 
     console.log(Tom) // 未設return => 回傳 undefined
     //? 此時的 this 指向 window, Func 建立環境為 window

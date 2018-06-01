@@ -11,79 +11,79 @@ Why use Class? 簡化程式碼 複雜度
 
 # ES5 Class 寫法
 ```js
-    function User(name, age) {
-        this.name = name
-        this.age = age
-        this.gender = 'male'
-    }
-    let tom = new User('Tom', 45)
-    let mark = new User('Mark', 30)
-    console.log(mark.age)
+  function User(name, age) {
+    this.name = name
+    this.age = age
+    this.gender = 'male'
+  }
+  let tom = new User('Tom', 45)
+  let mark = new User('Mark', 30)
+  console.log(mark.age)
 ```
 
 # ES5 Function 共通寫法
 //! 需要寫在 prototype上
 //* ES6 簡化此過程，直接寫於 Class 中即可
 ```js
-    User.prototype.birthYear = function() {
-        return new Date().getFullYear() - this.age;
-    }
+  User.prototype.birthYear = function() {
+    return new Date().getFullYear() - this.age;
+  }
 ```
 
 # 指定傳入的參數 寫法
 //* 順序無差別、key為基準
 ```js
-    function User({ name, age }) {
-        this.name = name !== undefined ? name : 'defaultName'
-        this.age = age
-        this.gender = 'male'
-    }
-    let tom = new User('Tom', 45)
-    let mark = new User('Mark', 30)
-    let test = new User({ age: 30, name: 'Mark' })
+  function User({ name, age }) {
+    this.name = name !== undefined ? name : 'defaultName'
+    this.age = age
+    this.gender = 'male'
+  }
+  let tom = new User('Tom', 45)
+  let mark = new User('Mark', 30)
+  let test = new User({ age: 30, name: 'Mark' })
 
-    console.log(test.name)
+  console.log(test.name)
 ```
 
 # ES5 Function
 ```js
-    function User({ name, age }) {
-        this.name = name !== undefined ? name : 'defaultName'
-        this.age = age
-        this.gender = 'male'
-        this.birth = ''
+  function User({ name, age }) {
+    this.name = name !== undefined ? name : 'defaultName'
+    this.age = age
+    this.gender = 'male'
+    this.birth = ''
 
-        //* 此 Function 放入 ES6 Class constructor 就會立即執行
-        //* 即不需要自行在做執行該Function
-        this.enrollDate = function () {
-            this.birth = new Date().getTime()
-            return new Date().getTime()
-        }
+    //* 此 Function 放入 ES6 Class constructor 就會立即執行
+    //* 即不需要自行在做執行該Function
+    this.enrollDate = function () {
+        this.birth = new Date().getTime()
+        return new Date().getTime()
     }
-    let test = new User({ age: 30, name: 'Mark' })
-    test.enrollDate()
+  }
+  let test = new User({ age: 30, name: 'Mark' })
+  test.enrollDate()
 
-    console.log(`birth${test.birth}`)
+  console.log(`birth${test.birth}`)
 ```
 
 # ES6 Class  (prototype 語法糖)
 ```js
-    class User {
-        //* constructor 建構式 初始化 建立物件會自動執行內部內容
-        constructor(name = 'Mark', age = 30) {
-            this.name = name
-            this.age = age
-            this.birth = ''
-            this.enrollDate()
-        }
-        // method
-        enrollDate() {
-            this.birth = new Date().getTime()
-            return new Date().getTime()
-        }
+  class User {
+    //* constructor 建構式 初始化 建立物件會自動執行內部內容
+    constructor(name = 'Mark', age = 30) {
+      this.name = name
+      this.age = age
+      this.birth = ''
+      this.enrollDate()
     }
-    let tom = new User('Tom', 45)
-    console.log(tom.birth)
+    // method
+    enrollDate() {
+      this.birth = new Date().getTime()
+      return new Date().getTime()
+    }
+  }
+  let tom = new User('Tom', 45)
+  console.log(tom.birth)
 ```
 
 # Function 寫於 constructor / method 的差異
