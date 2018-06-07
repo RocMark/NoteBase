@@ -8,6 +8,10 @@ gh-pages
 4. 使用 VSCode 內建把 public 加回來
 5. 將 public 內的檔案 放置最上層
 
+# 網址
+在 Github REPO 頁面
+Settings / Github Page 那邊
+
 # 推上 gh-pages 分支
 git push origin gh-pages
 
