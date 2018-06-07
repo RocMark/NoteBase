@@ -3,26 +3,30 @@
 //! jQuery 所有 '操作' 功能都是對多個對象執行
 Ex: next, parent, css....etc
 
-## 預設參數
-傳入 undefined 會使用 預設參數
-null 則為 null
-```js
-  function test123(num = '123') {
-    console.log(num) // 123   // null 會是 null
-  }
-  test123(null)
-```
+# 選擇器比較
+* doqs 是選到第一個東西
+* doqsAll 回傳 NodeList
 
-## 選取器 10:19BF
+* $('li')
 ```js
+  // jQuery.fn.init 為 jQuery的初始化 Function
   $('li')
-
   jQuery.fn.init[li,li,li,prevObject: jQuery.fn.init(1)]
   0: li.active  (dom)
   1: li
   2: li
   length: 1
   prevObject: 表parent是誰 // 待重看!!
+```
+
+## 預設參數
+傳入 undefined 會使用 預設參數
+* 傳入 null 則輸出為 null
+```js
+  function test123(num = '123') { 
+    console.log(num) // null 
+  }
+  test123(null)
 ```
 
 ## 選取器比較

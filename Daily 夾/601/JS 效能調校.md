@@ -53,8 +53,8 @@ Object用於
 ## 基本原則
 * 使用 {} 或 constructor(new) 建立物件最快
 * 勿用 Object.create() 建立
+效果等同於首條
 * 勿用過多繼承 (減少原型鏈層級)
-
 ```js
   // 最快 Same
   obj = new Object() 

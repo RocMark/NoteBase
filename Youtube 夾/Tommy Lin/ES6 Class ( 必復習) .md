@@ -11,14 +11,14 @@ Why use Class? 簡化程式碼 複雜度
 
 # ES5 Class 寫法
 ```js
-  function User(name, age) {
-    this.name = name
-    this.age = age
-    this.gender = 'male'
-  }
-  let tom = new User('Tom', 45)
-  let mark = new User('Mark', 30)
-  console.log(mark.age)
+function User(name, age) {
+  this.name = name
+  this.age = age
+  this.gender = 'male'
+}
+let tom = new User('Tom', 45)
+let mark = new User('Mark', 30)
+console.log(mark.age)
 ```
 
 # ES5 Function 共通寫法

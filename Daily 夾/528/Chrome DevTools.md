@@ -7,6 +7,10 @@
 Filter 可快速查詢屬性
 DOM Tree 可用拖拉的方式改變 DOM的位置
 
+# 查看 animation 情況
+Ctrl+Shift+P animation
+set speed to 10%
+上方可左上下左右旋轉視角，以便觀察變化
 
 # Block URL
 模擬 cdn 壞掉、連結失效

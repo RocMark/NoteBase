@@ -12,7 +12,6 @@ git stash save
 # 回到 git stash 前狀態
 1. git checkout commitID (由git stash list取得)
 
-2. git stash pop
-2. git stash apply
+2. git stash pop 或 git stash apply
 > 效果相同
 //? 取出暫存檔並合併至當前檔案
