@@ -58,6 +58,11 @@ Person Function 的內容，會變成此物件的屬性
   console.log(tim) // undefined
 ```
 
+* 無 new
+```js
+
+```
+
 # EX3
 * 若於該建構式自定 return "物件" 則會回傳自定結果
 [] 、 Function 也屬於物件

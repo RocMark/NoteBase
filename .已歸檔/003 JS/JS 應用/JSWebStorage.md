@@ -20,9 +20,7 @@
 //? 將String 轉回JSON並輸出
 ```js
   const arr = ['Tom', 'Mark', 'Tim']
-
   const str = JSON.stringify(arr)
-  
   localStorage.setItem('users', str)
 
   const newStr = JSON.parse(localStorage.users)

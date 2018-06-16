@@ -16,8 +16,8 @@ git merge master
 git rebase 的 演進圖，較乾淨簡單
 
 # git rebase作法
-原分支從 A長出，master 更新B，分支進行rebase
-//! 原從 A 長出分支， 變成從 B 長出
+原分支從 A commit 長出，master 更新B commit，分支進行rebase
+//! 原從 A commit 長出分支， 變成從 B commit 長出
 
 git checkout draft //* 於要更新的分支上執行
 git rebase master
