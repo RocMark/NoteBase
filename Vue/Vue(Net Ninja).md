@@ -1,14 +1,47 @@
 # VueNote (Net Ninja)
+> Youtube 合集 http://t.cn/RdVMKQ4
 http://t.cn/RdqYnk3
 
 * event 變數
 如果在 html 沒有要接其他變數，亦可省略
 直接在 method update(event){} 即可
+* @keyup.enter
 
-@keyup.enter
+#22 Props
+由父傳給子的資料
+```js
+  // 子
+  export default {
+    props: {
+      // 此處可先做傳入的資料型態驗證 fail 看 console
+      ninjas: {
+        type: Array,
+        required: true,
+      }
+    }
+    methods: {
+      test(){ console.log(this.ninjas) }
+    }
+  }
+  // 父層 切記要使用 v-bind
+  <template>
+    <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
+  </template>
+  // 此 ninjas 對應到 父中 data 內的 ninjas
+```
 
-#22 待續
 
+#24 Events  $emit (child to parent)
+#25 Event Bus
+> http://t.cn/RdVask0
+勿用，了解觀念即可
+* 使用 Vuex 較佳
+由子元件 可以使用 $emit 觸發 父元鍵的自定義事件
+> http://t.cn/RdVM65y
+```js
+  methods:{
+    this.$emit('changeTitle','params')
+  }
 
 
 # main.js

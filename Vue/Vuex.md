@@ -7,8 +7,6 @@
 3. store 共用
 屬於大家的資料
 
-
-
 * State 等同於 data
 會去 Render Compo
 
