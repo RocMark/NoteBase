@@ -50,7 +50,16 @@
     }
     let test = add(3, 4, 5, 6)
     console.log(test)
+
+    var arr = multiply(2, 1, 2, 3) 
+    console.log(arr)
+    function multiply(multiplier, ...theArgs){
+        return theArgs.map(function(elem){
+            return multiplier * elem
+        })
+    }
 ```
+
 ## Object.getOwnPropertyDescriptors
 ```js
     let tito = {
