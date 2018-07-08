@@ -2,6 +2,8 @@
 > https://www.youtube.com/watch?v=eX54AJFzxXU
 (16:00 始 前面介紹 Gulp+WebPack架構)
 
+* 將 store 放在 src 當中
+
 # Vuex 只用於
 跨組件 共用變數 !!!
 

@@ -1,5 +1,8 @@
 #22 Props
 由父傳給子的資料
+* 利用 v-bind 將 父的資料 傳下去
+
+* 子透過 props 去接收並運用
 ```js
   <template>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>

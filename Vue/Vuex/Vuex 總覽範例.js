@@ -1,7 +1,10 @@
 /* eslint-disable */
 
 // mutation_type內容 (存放 action & mutation 共通變數用)
-const VUEX_TEST = 'VUEX_TEST'
+const VUEX_TEST = 'VUEX_TEST';
+// 儲存 actions & mutations 共同變數
+
+// export default { VUEX_TEST };
 
 
 //! Vue Component 呼叫 dispatch 做為起始

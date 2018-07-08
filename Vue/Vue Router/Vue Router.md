@@ -7,6 +7,26 @@
 <router-link to="/add" exact>Add</router-link>
 可利用 這個去 Style 連結的樣式
 
+# routes 兩種寫法
+```js
+  routes: [
+    // 小型專案用此，會把所有 component 裝在同一支JS
+    {
+      path: '/comics',
+      name: 'Comics',
+      component: Comics
+    },
+    // 大型專案用此，會將 import 的包成一支 JS
+    // webpack 的功能，非同步載入，換頁才載該支
+    // code splitting 類似 Lazy Load
+    {
+      path: '/comics',
+      name: 'Comics',
+      component: () => import('@/pages/Comics')
+    }
+  ]
+```
+
 # VueRouter 使用預備
   * VueRouter 等同於 HTML8 History API
   * router-view 為路徑變更 要切換的區域 
