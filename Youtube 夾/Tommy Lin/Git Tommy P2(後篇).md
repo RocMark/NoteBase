@@ -1,6 +1,8 @@
 # Git Tommy P2 Git 
 > https://www.youtube.com/watch?v=TF6mWcBCf2o
 
+前篇整理完 windows 指令
+
 * git 原理 (1:25分 可review)
 利用 檔案內容 去運算 SHA-1 去計算 HashID
 當有 HashID 相同時會延用，不一樣才會新建

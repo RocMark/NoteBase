@@ -26,3 +26,20 @@
   }
   // 父層 切記要使用 v-bind
 ```
+
+# 子去對 props更動
+page 為 父層利用 props傳下的
+
+* 要在 父 template 呼叫 子元件時 加上 sync
+sync 表 同意 子元件可以做 props 的修改
+<chapter-thumb :page.sync="page"></chapter-thumb>
+
+* 不能直接去修改 props
+this.page = newData
+
+* 必須使用 $emit 發事件給 父層做修改的動作
+this.$emit('update: page', newData)
+
+* update: page 為 Vue 提供的格式
+update: 表更新
+page 表要更新的目標

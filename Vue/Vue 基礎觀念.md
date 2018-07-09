@@ -10,6 +10,20 @@ Vue 可選擇控制某塊，並不是整個網站都需要用 Vue
 * jQuery 去撰寫需要動畫的部分
 * Vue 去撰寫資料相關
 
+# Vue 資料控制 Dom
+scroll position 
+當資料改變時，滾動卷軸
+* this.$el 可找到該元件的最外層
+
+# 座標系統 
+* 重點於 原本座標 & 內外層座標關聯
+
+# PageHeader & PageFooter
+<router-view style="padding:60px 0 40px 0;"></router-view>
+
+PageHeader & PageFooter 用 Fixed
+要用 router-view 把原本的位置撐開
+
 # Tips
 * v-for="(val,key) in obj"
 * 勿拿 index 來刪除資料，使用 id 較準確
