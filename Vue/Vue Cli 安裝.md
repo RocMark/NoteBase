@@ -1,4 +1,4 @@
-# Vue Cli Note
+﻿# Vue Cli Note
 
 * method 使用 this 時
 先用 let vm = this 宣告，
@@ -7,10 +7,10 @@ Ex: Promise 後的 then
 
 * vue 只支援 BS4 (sass)
 
-# router-link 寫法
-<router-link :to="'home'">Home</router-link>
-<router-link :to="'/hey'">Hey</router-link>
-<router-view/>
+# Vue Global Setup
+
+npm i -g vue-cli
+
 
 # Vue-cli SetUp
   0. npm -v / node -v / npm i -g vue-cli
@@ -31,3 +31,8 @@ npm install sass-loader bootstrap@4.0.0-alpha.6 node-sass --save
 * 將此二修改於 App.vue (根元素)
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap";
+
+# router-link 寫法
+<router-link :to="'home'">Home</router-link>
+<router-link :to="'/hey'">Hey</router-link>
+<router-view/>
