@@ -2,8 +2,23 @@
 * router-view 必加 key 
 用 router 完整的路徑當 key，才能確保每頁切換都有動畫
 否則 /comics/1 /comics/2 會無動畫!
-* fade 為 自行撰寫的 動畫效果名稱 (如下)
+
+# 動畫流程
+1. v-enter-active
+下包含 
+v-enter     =>  v-enter-to
+opacity: 0  =>  opacity: 1
+
+2. v-leave-active
+下包含 
+v-leave     =>  v-leave-to
+opacity: 1  =>  opacity: 0
+
+
+# 動畫 撰寫格式 如下
 格式 要照著 Vue 給的格式去撰寫
+
+* fade 為 動畫前墜名稱 (自取)
 
 <transition name="fade" mode="out-in" appear>
   <router-view :key="$route.fullPath"></router-view>

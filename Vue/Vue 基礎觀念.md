@@ -4,6 +4,9 @@
 # SEO
 SPA 補上一段 Server Side Render (SSR) 較佳
 
+* propsData
+只能用在 new 實體 (要在cli不好用)
+
 # Vue
 Vue 可選擇控制某塊，並不是整個網站都需要用 Vue
 可使用 jQuery 配 Vue

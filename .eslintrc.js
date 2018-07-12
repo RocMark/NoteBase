@@ -11,6 +11,7 @@ module.exports = {
         "linebreak-style": 0,
         "func-names": 0,
         "semi": ["error", "never"],
+        "max-len": 0,
         "strict": 0
     }
 };

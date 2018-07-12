@@ -18,23 +18,7 @@ http://t.cn/RdqYnk3
   * @keyup.enter
 <!-- --------------------- -->
 
-#38 Mixin
-  將可複用的 Code抽出到 Mixin File 在做 import
-  建立 mixins 資料夾 > searchMixin
-  ```js
-    // 於 compo 使用
-    import searchMixin from '../mixins/searchMixin'
 
-    mixins: [ searchMixin ]
-
-    // searchMixin 內容
-    export default {
-      computed: {
-        return this.blog filter~
-      }
-    }
-  ```
-<!-- --------------------- -->
 
 
 

@@ -9,6 +9,8 @@ C:\Program Files\Microsoft VS Code\bin;
 
 # git 預設編輯器
 確認 code-insiders 可以運行
+* 設定完成後，使用 git commit 即可
+
 * 輸入指令
 git config --global core.editor "code-insiders --wait"
 * 檢查是否成功
