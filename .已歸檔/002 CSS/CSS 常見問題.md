@@ -1,9 +1,4 @@
 # CSS 常見問題整理
-> 文字/Position篇另開檔 &copy 
-
-# Bug & 待學
-//* transform
-//* w/h100% 會使Scroll失效
 
 # 重點篇
 //? 文字置中 (div也可用)

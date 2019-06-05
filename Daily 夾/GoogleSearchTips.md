@@ -34,16 +34,3 @@ related:網址
 用星號 代表 忘記的內容
 Google 會自動幫你補全
 Ex: 11.22* (11.22.63 電視節目名)
-
-
-# 較少用的
-* 學習字的由來
-define:關鍵字
-
-* 使用同義詞
-health ~food
-可以得到 recipe / 餐廳...等
-
-* 自動補全 Phrase
-輸入 頭 AROUND(4) 尾
-AROUND 表中間大概幾個字
