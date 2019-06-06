@@ -16,18 +16,6 @@ Hoisting 於 建立執行環境的 建立階段執行 (複習 JS 執行環境)
 * 變數同名 覆寫權重
 變數宣告 / 函式表達 (此二看Code位置) > 函式宣告 > 參數宣告 > this
 
-* IIFE / 函式表達式 取名
-```js
-  // IIFE 同 命名函式表達式 概念
-  ;(function bzz() {
-    var inSide = 123
-    console.log(bzz) // 指向此 Function
-  }())
-  // IIFE 為 Function 因此 內部的變數無法被使用
-  console.log(inSide) // inSide is not defined
-  console.log(bzz) // bzz is not defined
-```
-
 # 測試題 (必看) K
 這題會解釋，就免繼續看了
 ```js

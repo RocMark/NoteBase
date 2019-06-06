@@ -52,7 +52,6 @@
   </figure>
 ```
 
-
 # Section VS Article
 兩者皆可互包
 * article

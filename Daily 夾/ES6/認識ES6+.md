@@ -204,19 +204,6 @@ const 對於 Primitive 型別 (String,Number,Boolean,Symbol) 可以有不可更�
     console.log(name)
 ```
 
-//* 組建 物件
-```js
-    //* 組建 物件
-    let name = 'alex'
-    let gender = 'male'
-    let alex = {
-        //? eslint object-shorthand
-        //* 直接寫 name 即可
-        name: name,  
-        gender: gender,
-    }
-```
-
 # Array / 物件 鏡射
 ```js
     let [a, b, ...c] = [1, 2, 3, 4]
@@ -236,54 +223,4 @@ const 對於 Primitive 型別 (String,Number,Boolean,Symbol) 可以有不可更�
 
     //* node module 蠻常見
     import { name, gender, age } form 'alex'
-```
-
-# 組成物件
-```js
-    //* 組成物件
-    let name = 'alex'
-    let gender = 'male'
-    //* ESLint會自動改成縮寫  (: name;可省略)
-    let alex = {
-        name: name,
-        gender: gender
-    }
-```
-
-# ES6 Promise & Async
-
-array map/reduce 等鏈式為 同步
-當 map / reduce 中 有 setTimeout / 取資料動作時，
-應該將鏈式設成非同步 (使用 Promise) 才能確保資料正確!
-
-//! async/await base on promise
-async / await 仍需要使用到 promise
-
-//? async/await：同步的視覺，非同步的享受
-
-```js
-    function fn1() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                console.log(1)
-                resolve() // 會決定何時進 then
-            }, 0)
-        })
-    }
-    function fn2() {
-        console.log(2)
-    }
-    fn1().then(fn2)
-```
-
-# async / await
-```js
-    fn1().then(fn2)
-
-    async function fn3() {
-        //? async/await：同步的視覺，非同步的享受
-        //* async/await 等同上方 fn1().then(fn2)
-        await fn1()
-        fn2()
-    }
 ```

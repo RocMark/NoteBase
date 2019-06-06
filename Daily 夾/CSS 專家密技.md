@@ -5,9 +5,7 @@
 # Note
 * 屬性選取器[href='#']，效能較差 (少用)
 * font-size 快捷 fz
-
 * input[type="text"]比直接下class還慢
-
 * 寬高比 = height / width * 100
 
 # bs3 gutter [2:07]
@@ -38,7 +36,6 @@ Ex: Youtube影片(iframe)、GoogleMap
 2. iframe 加入 poab
 將不論是高或padding 撐出的空間拿來填滿
 3. 因此可設 w100p h100p 做填滿 
-
 //? 無論Viewport寬，子元素將維持其寬高比
 ```css
   .container {
@@ -59,77 +56,6 @@ Ex: Youtube影片(iframe)、GoogleMap
     height: 100%; 
   }
 ```
-
-# 顯示、隱藏
-用 JS 去控制 aria-hidden 代替 
-加上 hidden 的 Class
-```css
-  [aria-hidden="true"]{
-    display: none
-  }
-```
-
-# bs4 clearfix
-```css
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-```
-
-# CSS Reset (css-reset)
-normalize.css
-box-sizing  default 為 content-box
-
-# unset 
-讓元素回復到全部的預設値 (IE 11 不支援)
-```css
-  button {
-    all: unset;
-  }
-```
-
-# 移除 多餘的 首/末 border
-* :not() (反向選取器) [好用]
-* not 語意較佳、但效能倒數的
-* +號 效能/閱讀性較差、但不會造成複寫、較差
-加號 => 跟屁蟲選取器 [支援度較佳]
-
-```css
-  /* 效果同下面的範例 */
-  .nav li + li {
-    border-left: 1px solid #eee;
-  }
-
-  /* 效果同下面的範例 */
-  .nav li:not(:last-child) {
-    border-right: 1px solid #666;
-  }
-
-  .nav li {
-    border-right: 1px solid #666;
-  }
-  .nav li:last-child {
-    border-right: none;
-  }
-```
-
-# List 橫向排列
-//* li d-inline-block
-```css
-  li {
-    display: inline-block;
-  }
-```
-
-# 全域套用 line-height (加在body上)
-```css
-  body {
-    line-height: 1.5;
-  }
-```
-
 # nth-child (第n個子物件)
 //! 必須 Tag 也符合才有用，重點於第n個
 //? even odd
@@ -164,14 +90,6 @@ n*1 + 2 => 5可以選到
   }
 ```
 
-# 表格中每個儲存格維持等寬
-table-layout: fixed
-```css
-  .calendar {
-    table-layout: fixed;
-  }
-```
-
 # 屬性選取器 應用
 根據不同上傳檔案類型，前面的 Icon不同
 <!-- <p><span lang="zh-TW">lorem</span></p> -->
@@ -183,90 +101,4 @@ table-layout: fixed
   a[href$=".pdf"]{bgi}
   a[href$=".doc"]{bgi}
   a[href$=".ai"]{bgi}
-```
-
-# :empty (CSS3選取器) [IE8 不支援]
-<!-- <div></div> -->
-可以選擇 內無文字的 Tag
-可用在 非必填 顯示欄位 方便
-```css
-  input[type="text"]:empty{}
-  div:empty { }
-```
-
-
-# 為 破圖定義樣式 [還不錯]
-```sass
-  img 
-    display: block
-    font-family: Helvetica, Arial, sans-serif
-    font-weight: 300
-    height: auto
-    line-height: 2
-    position: relative
-    text-align: center
-    width: 100%
-  img::before 
-    content: "We're sorry, the image below is broken :("
-    display: block
-    margin-bottom: 10px
-  img::after 
-    content: '(url: ' attr(src) ')'
-    display: block
-    font-size: 12px
-```
-```css
-  img {
-    display: block;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    height: auto;
-    line-height: 2;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-  img::before {
-    content: "We're sorry, the image below is broken :(";
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  img::after {
-    content: '(url: ' attr(src) ')';
-    display: block;
-    font-size: 12px;
-  }
-```
-# rem 設定全域 em 設區域大小
-rem 跨平台好用 (舊版不支援)、 em 做無障礙網站會用到
-px 穩定
-
-# :root 彈性字體大小
-```css
-  :root {
-    font-size: calc(1vw + 1vh + 0.5vmin);
-  }
-  body {
-    font: 1rem/1.6 sans-serif;
-  }
-```
-
-# mobile UX 
-設定表單元素的 font-size
-```css
-  input[type='text'],
-  input[type='number'],
-  select,
-  textarea {
-    font-size: 16px;
-  }
-```
-# pointer-events
-禁用 btn 的 cursor: pointer
-```css
-  .button-disabled {
-    opacity: .5;
-    pointer-events: none;
-  }
 ```

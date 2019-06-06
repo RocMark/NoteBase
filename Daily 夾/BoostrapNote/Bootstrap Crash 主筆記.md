@@ -42,10 +42,9 @@ max-width: 100% [mw-100 mh-100]
 * lead 用於 p 首段(字較稍大)
 
 ### 文本排版
-* text-left / text-right / text-center / text-justify
+* text-justify
 * text-nowrap
-* text-lowercase / text-uppercase
-* text-capitalize
+* text-lowercase / text-uppercase / text-capitalize
 
 ## list  
 * list-unstyled (去除bullet / padding)
@@ -121,24 +120,6 @@ form-control-{lg / sm} //* 響應式放大縮小
   </div>
 ```
 
-### badge 備註標籤
-* badge-pill 膠囊樣式
-```html
-  //* 標題後的 Tag
-  <h1>Example heading
-    <span class="badge badge-secondary">New</span>
-  </h1>
-
-  //* 按鈕備註用 Tag
-  <button type="button" class="btn btn-primary">
-    Notifications
-    <span class="badge badge-light">4</span>
-  </button>
-
-  //* Link 標籤  [用於文章書簽 badge-pill 膠囊樣式]
-  <a href="#" class="badge badge-pill badge-primary">Primary</a>
-```
-
 ### Images
 //? 設定寫於 Img 上
 * img-fluid 設定為響應式 
@@ -155,47 +136,4 @@ form-control-{lg / sm} //* 響應式放大縮小
     <source srcset="" media="(max-width: 900px) and (orientation: portrait)" type="">
     <img src="" class="img-fluid rounded img-thumbnail" alt="">
   <picture>
-```
-
-
-
-## 較少用的
-## table [Done]
-* table 基礎
-* table-dark 暗色版
-* thead-light / thead-dark
-* table-striped  間隔深淺
-* table-bordered 線框
-* table-hover
-* table-sm (將padding縮小一些)
-
-* 水平捲動
-外層包覆如下，當內容超過 ViewPort提供捲動軸
-<div class="table-responsive"></div>
-
-* table-responsive{-sm|-md|-lg|-xl}
-對應不同段點作設定 同樣寫於外層 div
-創建響應式表格，使表格在 576px, 768px, 992px, 和 1120px 中斷點(max-width)內能夠水平的滾動。
-
-### 文字裝飾 Decoration
-* mark (HighLight用) / small (次要字)
-* del (刪除線) / u (下底線) / strong (粗體)
-
-### float float-right / float-left /  clearfix
-
-### blockquote 引言
-```html
-    <blockquote class="blockquote-reverse">
-      <p>
-        Lorem20
-        <footer class="blockquote-footer">Quote by <cite>John Doe</cite> </footer>
-      </p>
-    </blockquote>
-```
-
-### code (程式碼區塊) & kbd(提示按鍵)
-```html
-    <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
-    <br>
-    Copy this with <kbd>cd</kbd>
 ```

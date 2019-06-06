@@ -188,19 +188,6 @@ Object用於
   obj = Object.create(Object.prototype, { p : { value: 1 } })
 ```
 
-# Array
-Array 用於
-* 有順序的集合
-* 需要數字當索引
-
-Array 也是物件的一種
-```js
-  const a = [1, 2]
-  a['test'] = 123
-  console.log(a) // [1, 2, test:123]
-  console.log(a.test)
-```
-
 ## 基本原則
 * 使用 var a = [1, 2, 3]
 * 使用一致的型別 ，JS能作最佳化

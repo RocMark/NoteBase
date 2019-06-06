@@ -44,3 +44,19 @@
 ## replace( regexp/substr , replacement)
 找出相字串 取代
 記得加上 g flag 否則只會替換掉第一個匹配的字串
+
+# String Method
+length / toUpperCase()
+* substring(始,末)  取子字串
+* split('當做切割點')  切割字串成陣列
+```js
+  // ES6 Template String
+  let st = 'Hello Tom'
+  console.log(st.substring(0,5)) // Hello
+  let name = 'Mark';
+  console.log(`My Name is ${name}`);
+
+  let st2 = 'tech, it, code'
+  console.log(st2.split(', '))
+  // ["tech", "it", "code"]
+```

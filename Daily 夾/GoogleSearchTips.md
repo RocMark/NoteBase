@@ -1,13 +1,10 @@
-# GoogleSearchTips
-Google 搜尋技巧
-
+# Google 搜尋技巧
 * 多個 關鍵字 可用 | 或是 or
 * 以圖搜圖
 
 # 特定檔案類別
 > Ex: pdf ppt
 filetype: pdf
-
 
 # 特定順序 (雙引號)
 "這些字要照順序才會被搜到"

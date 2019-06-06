@@ -1,5 +1,7 @@
 # JS 物件
 
+物件屬性 ['456']
+
 ## 物件特性
 JS 所有東西都是物件除了 undefined & 基礎型別
 
@@ -39,19 +41,6 @@ boolean => Boolean物件
   x.sayYo()   // Yo
 ```
 
-## 存取物件的方法
-```js
-  var foo = {name: 'Mark'}
-  console.log(foo.name)
-  console.log(foo['name'])
-
-  var get = 'str'
-  console.log(foo[get])
-
-  foo.123 // SyntaxError
-  foo['123'] // 即可
-```
-
 ## 刪除物件的方法  [勿用delete]
 * 屬性不用，設為 null 即可，沒必要不用刪
 應該避免在執行時期，修改物件結構
@@ -77,11 +66,33 @@ boolean => Boolean物件
   console.log(obj.x)  // TypeError
 ```
 
-## Object Literal
-IE8前，無法在物件中使用 關鍵字
+# JS for-in 迴圈
+
+用法與 Array.prototype.forEach 很像
+
+# 注意事項
+//? for-in 會 loop 整個 prototype chain
+//! 所以繼承來的屬性&方法也會被輸出
+
+//* 處理陣列資料，為了避免呼叫出不必要的屬性，儘可能不要使用 for...in 的用法來處理迴圈。
+
+# 語法
 ```js
-  var test = {
-    delete: '',    // IE8之前無效
-    'delete': '',  // 加上單引號即可
-  }
+    // prop 自訂變數，會將該物件屬性存入該變數
+for (let prop in Customer1) {
+
+    //! 解 非 繼承而來的屬性才輸出
+    //* 取得屬性是否屬於該物件而非繼承 回傳 boolean
+    
+    if (Customer1.hasOwnProperty(prop)) {
+        console.log(`${prop}: ${Customer1[prop]}`)
+    }
+}
 ```
+
+# ESLint 提示
+//* guard-for-in
+> for-in 應該被包裹在 if中用來過濾不需要的屬性
+//? no-restricted-syntax
+> for-in 會 loop整個原型鏈 
+//* Use Object.{keys,values,entries} 去找所需較佳

@@ -8,14 +8,6 @@ https://goo.gl/W3HaqT
 * 避免尺寸不合，難以調整
 * 避免浪費傳輸量、下載時間
 
-## Img 預設 CSS
-```css
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-```
-
 ## HTML5 <picture> 標籤
 不需要 JS / CSS，即可達響應式圖片
 

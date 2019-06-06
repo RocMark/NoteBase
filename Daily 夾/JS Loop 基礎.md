@@ -9,7 +9,7 @@
 - for in 用於循環物件屬性
 類似 Object.keys()，較少用
 
-- High Order Function (見Array章節)
+- High Order Function (見陣列整理)
 filter 篩選
 map  根據原陣列 建立新陣列 (鎖定某屬性)
 reduce 累加 / 累乘用
