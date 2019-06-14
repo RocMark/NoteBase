@@ -133,3 +133,44 @@ BS4亦選用此
     height: 100vh;
   }
 ```
+
+# SCSS
+* 加 > 會比較好 (效能較佳)
+* 且 指定 "下一層 only"
+```scss
+  .tabList {
+    > header {
+      padding: 0;
+    }
+  }
+```
+
+# SCSS 變數 vs calc
+* 用變數在做運算較佳
+```css
+  ul {
+    /* 會直接運算 16.6666~% */
+    width: $w / 6;
+    /* 不會做先運算  IE11 可*/
+    width: calc(100% / 6);  
+
+    /* 錯誤寫法!!!  要有空隔 */
+    width: calc(100%/6);  
+    width: 100% / 6;  
+  }
+```
+
+# ul 小技巧
+* 使用 inline-block 會使每個項目間多一個字元
+因此 使用 fz0 讓該字元不顯示
+li 在將內容補回
+```css
+  ul {
+    list-style: none;
+    font-size: 0;
+  }
+  li {
+    display: inline-block;
+    font-size: 16px;
+  }
+```
