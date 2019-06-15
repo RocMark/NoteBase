@@ -17,7 +17,7 @@ off[重新整理不儲存之前輸入的值]
 <input type="range" min="-10" max="10" step="2">
 ```
 
-**Hidden**
+# Hidden
 * 供PHP用於儲存一些表單資訊 但不顯示 Ex:時間戳記/登入記錄..etc
 * 仍會送出隱藏的資料
 ```
@@ -26,12 +26,12 @@ off[重新整理不儲存之前輸入的值]
 <input type="submit" name="send" value="送出表單">
 </form>
 ```        
-**ReadOnly V.S. Disable**
+# ReadOnly V.S. Disable
 > 可用於 顯示帳號 但不提供修改
 * readonly 唯讀，submit會傳送資料 
 * disable 唯獨，submit不會傳送資料
 
-**Pattern**
+# Pattern
 * [0]必須填0!  [0-9] 0~9之間皆可用 [A-Z]同理 [a-z]  {8}8個數字 
 * 注意!!!! 大小寫有別!
 ```
@@ -41,12 +41,12 @@ off[重新整理不儲存之前輸入的值]
 <input type="text" name="text" pattern="[a-z]{2}[0-5]{3}" title="aa222">
 ```
 
-**CheckBox & Radio**
+# CheckBox & Radio
 * checked 可以預設為已勾選 限定於 type="checkbox或radio"
 * 常與 label Tag合用
 * 點擊 Male 字樣時 會自動選取radio id="male"
 
-**label優點**
+# label優點
 [詳細解說文](http://crazy.molerat.net/learner/cpuroom/programmer/reading.php?filename=1010706120235.dov)
 1. 點選範圍加大，讓使用者更容易點選選項
 2. 無障礙設計，導盲鼠會閱讀出與input綁定的label名稱，使使用者一聽就曉得這個選項是什麼
@@ -59,7 +59,7 @@ off[重新整理不儲存之前輸入的值]
 </form>
 ```
 
-**CheckBox & Radio 注意事項**
+# CheckBox & Radio 注意事項
 * 同一組的單選按鈕，name 取值一定要一致，這樣同一組的單選按鈕才可以起到單選的作用
 * 復選框 name取值最好有所區別
 * 原因  [有誤請糾正!]
@@ -69,13 +69,13 @@ JavaScript或php通過name屬性，就知道你選擇了什麼了。
 如果你的複選框各個控件的name屬性都一樣，
 對於服務器來說，它根本不知道你選擇的是什麼。
 
-**Color**
+# Color
 * 可設預設顯示顏色
 ```
 <input type="color" value="#eee">
 ```
 
-**File**
+# File
 * accept屬性 限定於 type="file"
 * accept 只接受的檔案類型 file_extension audio/* video/* image/* media_type
 ```
@@ -83,7 +83,7 @@ JavaScript或php通過name屬性，就知道你選擇了什麼了。
 <input type="file" accept="audio/*">
 ```   
 
-**Image**  [盡可能少用] (查閱的資料歷史悠久，有錯誤請糾正3Q)
+# Image  [盡可能少用] (查閱的資料歷史悠久，有錯誤請糾正3Q)
 * height / width /src / alt 皆只可用於image
 1. input 會提交表單兩次，造成寫入異常
 2. img 則正常
@@ -92,18 +92,18 @@ JavaScript或php通過name屬性，就知道你選擇了什麼了。
 <img src="xxx.gif" onclick="return onsubmit();"> 
 ```
 
-**待額外製作樣式原件**
+# 待額外製作樣式原件
 * range 另寫顯示值的物件
 * file 另寫提示字 & 測試多值 multiple
 * checkbox / radio 與其他長條型input不同
 
 
-**V.S. Button**
+# V.S. Button
 [參考原文](http://blog.csdn.net/qiyuanhjc/article/details/75158545)
 * Button 已具有 input button的屬性，但可操控性更強
 * Button 內部可以放圖片/文本 input無法!
 * 建議: 在表單中 還是盡量使用 input submit 作為 提交按鈕
-* 注意! 若要在表單中 使用button 記得要設置 **type="submit"**
+# * 注意! 若要在表單中 使用button 記得要設置 type="submit"
 
 * 請始終為按鈕規定type屬性：Internet Explorer的默認類型是"button"，
 * 而其他瀏覽器中（包括W3C規範）的默認值是"submit"。
@@ -115,7 +115,7 @@ JavaScript或php通過name屬性，就知道你選擇了什麼了。
 </button>
 ```
 
-**V.S. Image**  
+# V.S. Image  
 * [盡可能少用] (查閱的資料歷史悠久，有錯誤請糾正3Q)
 * height / width /src / alt 皆只可用於image
 1. input 會提交表單兩次，造成寫入異常
@@ -125,18 +125,18 @@ JavaScript或php通過name屬性，就知道你選擇了什麼了。
 <img src="xxx.gif" onclick="return onsubmit();"> 
 ```
 
-**With TextArea** [待補]
+# With TextArea [待補]
 * https://www.w3schools.com/tags/tag_textarea.asp
 * http://www.webtech.tw/info.php?tid=HTML_textarea_%E8%A1%A8%E5%96%AE%E5%A4%9A%E8%A1%8C%E6%96%87%E5%AD%97%E8%BC%B8%E5%85%A5%E6%AC%84%E4%BD%8D%E5%85%A7%E6%96%87%E5%AD%97%E5%A4%A7%E5%B0%8F%E8%A8%AD%E8%A8%88
 * http://www.webpage.idv.tw/study/03/09/textarea.htm
 
 
 
-**dirname**
+# dirname
 * textarea 亦可使用
 * 書寫方向! EX:阿拉伯文為左至右書寫
 
-**list**
+# list
 * 用來與datalist搭配
 ```
 <input list="browsers">
@@ -152,12 +152,12 @@ JavaScript或php通過name屬性，就知道你選擇了什麼了。
 </select>
 ```
 
-**延伸一下dataList V.S. Select**
+# 延伸一下dataList V.S. Select
 dataList的表現很像是一個select下拉列表，但它只是提示作用，並不限制用戶在input輸入框裡輸入什麼
 select標籤創建了一個菜單。菜單裡的選項通過option標籤指定。一個select元素內部，必須包含一個option元素，
 總的來說就是，它們都可以顯示出一個下拉表單框，但是select標籤只能在它提供的選項中選擇，而datalist不僅可以讓你選擇，還可以讓你自己輸入其它的選項。
 
-**時間相關tag**
+# 時間相關tag
 [進階用法參考文](https://blog.gtwang.org/web-development/html5-date-input/)
 * 注意datetime-local 12-8 (無效) 12-08(O)
 * week >52 (無效)
@@ -175,7 +175,7 @@ select標籤創建了一個菜單。菜單裡的選項通過option標籤指定�
 </form>
  ```
 
-**form 相關**
+# form 相關
 * form 可讓input脫離母體form且可讓input屬於多個form
 ```
 <form action="/action_page.php" id="form1">
@@ -186,7 +186,7 @@ Last name: <input type="text" name="lname" form="form1">
 ```
 * formnovalidate="formnovalidate" //指定不驗證
 
-**以下只可用於Submit/Image**
+# 以下只可用於Submit/Image
 * formaction ="?a=1&b=3"  //單獨指定提交後執行動作
 可以用於提交後前往另一個頁面 執行與form不同的php檔
 ```
