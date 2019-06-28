@@ -122,31 +122,3 @@ Hoisting 於 建立執行環境的 建立階段執行 (複習 JS 執行環境)
   }
   a()
 ```
-
-# 函式表達 & IIFE K
-```js
-  foo() // foo is not a function
-  baz() // baz is not a function
-
-  bar() // 可用，函式宣告式，整塊被提升
-  function bar() = {}
-
-  var foo = function () {}; // 匿名函式表達式 (只有foo被提升)
-
-  var baz = function spam() { // 命名函式表達式 (只有baz被提升)
-      // spam 變數名稱 只可以用於此區塊
-      console.log(spam) // 指向此 Function
-  }; 
-
-  // Scope Chain 只可往外找，無法往內找
-  spam(); // ReferenceError "spam is not defined"
-
-  // IIFE 同 命名函式表達式 概念
-  ;(function bzz() {
-    var inSide = 123
-    console.log(bzz) // 指向此 Function
-  }())
-  // IIFE 為 Function 因此 內部的變數無法被使用
-  console.log(inSide) // inSide is not defined
-  console.log(bzz) // bzz is not defined
-```

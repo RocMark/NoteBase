@@ -3,7 +3,8 @@
 
 重用性 維護性 延展性
 
-# 命名大方向
+## 命名大方向
+
 1. 避免限制性命名 
 Ex: product-list(x) list (o)
 2. 避免用顏色名 
@@ -11,9 +12,8 @@ Ex: text-blue(x) text-primary(o)
 3. 避免用位置命名
 Ex: .left-menu(x) col-4(o)
 
-# OOCSS
+## OOCSS
 將 CSS 物件化、模組化
-
 * 結構、樣式 容器、內容
 
 ## 將 結構 與 樣式 分離
@@ -58,4 +58,3 @@ Block 之下的 小元件
 
 ## Modifier
 * 管理 Block & Elem 狀態
-
