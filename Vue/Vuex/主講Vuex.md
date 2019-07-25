@@ -2,21 +2,23 @@
 > https://www.youtube.com/watch?v=eX54AJFzxXU
 (16:00 始 前面介紹 Gulp+WebPack架構)
 
-* 將 store 放在 src 當中
-
-# Vuex 只用於
-跨組件 共用變數 !!!
+# Vuex 功用
+* 主要是用來 跨元件的
 
 # Vuex 最常用於 會員登入
 會員是否 登入的狀態 & 會員等級 會影響很多組件的樣版
 
 # Store 本體
+* 將 store.js 放在 src 當中
+* 開發時，開啟嚴謹模式
+* 上線時，關閉嚴謹模式，此模式非常耗資源
 ```js
   export default new Vuex.Store({
     state,
     getter,
     actions,
     mutations,
+    // 開啟嚴謹模式
     strict: true,
   })
 ```
