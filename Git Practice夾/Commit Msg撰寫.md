@@ -39,18 +39,6 @@ who / when / where / why / what / how
 
 //! 需關注的點為: what , why , how
 
-# 設置 .gitmessage 模板
-> git 內置就支持的，你可以在每次提交時始用 Template
-
-1. 建立 .gitmessage file
-2. 內文撰寫 Template
-3. 設定template
-git config commit.template "補上資料夾位置"/.gitmessage
-4. git commit 即可 進入編寫
-
-//* 取消設定 git config --unset ~
-//? git config -l 可查看有哪些設定可用
-
 # Type
 feat： 新增feature
 fix: 修復bug
@@ -61,4 +49,3 @@ perf: 優化相關，比如提升性能、體驗
 test: 測試用例，包括單元測試、集成測試等
 chore: 改變構建流程、或者增加依賴庫、工具等
 revert: 回滾到上一個版本
-

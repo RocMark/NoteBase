@@ -2,8 +2,8 @@
 
 # fork vs clone
 //* 自身github就有一個一模一樣的倉庫，但URL不同
-fork 將別人的倉庫複製一份到自己的倉庫
 
+fork  將別人的庫，複製一份到自己的庫
 clone 將 github中的倉庫複製到本地電腦
 
 # pull request
