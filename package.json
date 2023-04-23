@@ -6,7 +6,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1"
+    "eslint": "^8.39.0"
   },
   "author": "RocMark",
   "license": "MIT"
